@@ -1,42 +1,22 @@
 import Swiper from 'swiper';
-import { Navigation, Keyboard } from 'swiper/modules';
+import { Navigation, Keyboard, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-const swiperContainer = document.querySelector('.swiper-container');
+const swiperContainer = document.querySelector('.swiper');
 
-// const swiper = new Swiper(swiperContainer, {
-//   modules: [Navigation],
-//   navigation: {
-//     nextEl: '.button-next',
-//     prevEl: '.button-prev',
-//   },
-//   keyboard: {
-//     enabled: true,
-//     onlyInViewport: true,
-//     pageUpDown: true,
-//   },
-//   slidesPerView: 1,
-//   autoHeight: false,
-//   spaceBetween: 16,
-//   watchOverflow: true,
-//   centeredSlides: true,
-//   slidesPerGroup: 1,
-//   autoWidth: false,
-// });
 const swiper = new Swiper(swiperContainer, {
-  modules: [Navigation, Keyboard],
+  modules: [Navigation, Keyboard, Pagination],
   navigation: {
     nextEl: '.button-next',
     prevEl: '.button-prev',
   },
+
   direction: 'horizontal',
-  spaceBetween: 24,
+  spaceBetween: 22,
   autoHeight: false,
   autoWidth: false,
   centeredSlides: true,
-  watchOverflow: true,
-  slidesPerView: 'auto',
-  slidesPerGroup: 1,
+  // watchOverflow: true,
   keyboard: {
     enabled: true,
     onlyInViewport: true,
@@ -54,4 +34,12 @@ const swiper = new Swiper(swiperContainer, {
     },
   },
 });
-swiper.updateSlides();
+swiperContainer.slideNext();
+swiper.params.cssMode = true;
+swiper.params.scrollbar = {
+  el: '.swiper-scrollbar',
+  draggable: true,
+};
+swiper.update();
+document.querySelector('.swiper-wrapper').style.transform =
+  'translate3d(-55px, 0px, 0px)';

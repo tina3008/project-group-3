@@ -1,4 +1,4 @@
-/** ====== mobil===== */
+/* * ====== mobil===== */
 .reviews {
   max-width: 375px;
   display: flex;
@@ -33,10 +33,7 @@
   border-radius: 20px;
 }
 .swiper-slide {
-  /* height: 302px !important; */
-}
-.swiper-wrapper {
-  transform: translate3d();
+  height: 302px !important;
 }
 
 .reviews-image {

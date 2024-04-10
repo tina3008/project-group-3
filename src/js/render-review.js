@@ -18,10 +18,8 @@ function templateReview(_id, author, avatar_url, review) {
 }
 
 function reviewNotFound() {
-  const endMessage = document.createElement('p');
-  endMessage.classList.add('end-message');
-  endMessage.textContent = 'Not found';
-  reviewsList.insertAdjacentElement('afterend', endMessage);
+  const markup = '<p class="end-message">Not found</p>';
+  reviewsList.insertAdjacentHTML('afterend', markup);
 }
 
 function templateReviews(reviews) {
