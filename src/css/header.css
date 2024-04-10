@@ -1,1 +1,57 @@
 
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 32px;
+}
+.header-button {
+}
+.menu-link{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--main-text);
+}
+
+
+
+
+
+
+#dropdown {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 52%;
+    transform: translateX(-50%);
+    opacity: 0; /* Скрываем меню initially */
+    transition: opacity 0.2s ease-in-out; /* Плавное появление */
+  }
+  
+  #profile.active #dropdown {
+    display: block;
+    opacity: 1; /* Показываем меню */
+  }
+  
+  #dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+  }
+  
+  #dropdown a:hover {
+    background-color: #f4f4f4;
+    transform: scale(1.1);
+  }
+  
