@@ -63,10 +63,7 @@
   text-align: left;
   max-width: 294px;
 }
-.swiper-button-prev {
-}
-.swiper-button-next {
-}
+
 @media screen and (width: 320px) {
   .reviews-list-items {
     padding: 22px 12px;
