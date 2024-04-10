@@ -1,0 +1,17 @@
+<svg aria-hidden="true"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-arrow" viewBox="0 0 33 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6154" d="M16.308 0.308c8.667 0 15.692 7.026 15.692 15.692s-7.026 15.692-15.692 15.692c-8.667 0-15.692-7.026-15.692-15.692s7.026-15.692 15.692-15.692z"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2308" d="M11.385 16h9.846"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2308" d="M17.538 12.308l3.692 3.692-3.692 3.692"></path>
+</symbol>
+<symbol id="icon-arrowarr" viewBox="0 0 33 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6154" d="M16.308 31.692c-8.667 0-15.692-7.026-15.692-15.692s7.026-15.692 15.692-15.692c8.667 0 15.692 7.026 15.692 15.692s-7.026 15.692-15.692 15.692z"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2308" d="M21.231 16h-9.846"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2308" d="M15.077 19.692l-3.692-3.692 3.692-3.692"></path>
+</symbol>
+</defs>
+</svg>
+
+
+

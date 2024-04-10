@@ -1,30 +1,24 @@
-<section class="reviews">
+<section class="reviews" id="reviews">
   <div class="container-wrapper">
     <h2 class="reviews-header">REVIEWS</h2>
     <div class="swiper">
-      <ul class="reviews-list swiper-wrapper">
-        <li class="reviews-list-items swiper-slide" data-id="${_id}">
-          <img
-            class="reviews-image"
-            src="https://ftp.goit.study/img/avatars/4.jpg"
-            alt=""
-            width="48"
-            height="48"
-            loading="lazy"
-          />
-          <div class="swiper-lazy-preloader"></div>
-          <div class="reviews-text-contant">
-            <h3 class="reviews-name-header">"Natalia"</h3>
-            <p class="reviews-main-text">
-              "Work with was extraordinary! He turned out to be a very competent
-              and responsible specialist. The projects were completed on time
-              and the result exceeded my expectations."
-            </p>
-          </div>
-        </li>
-      </ul>
+      <ul class="reviews-list swiper-wrapper"></ul>
     </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <div class="arrow-container">
+      <div class="button-prev">
+        <button class="button-prev-svg button-prev" type="button">
+          <svg class="arrow-swiper" width="52" height="52">
+            <use xlink:href="../img/svg-reviews/arrow.svg#icon-arrowarr" />
+          </svg>
+        </button>
+      </div>
+      <div class="button-next">
+        <button class="button-next-svg button-next" type="button">
+          <svg class="arrow-swiper" width="52" height="52">
+            <use xlink:href="../img/svg-reviews/arrow.svg#icon-arrow" />
+          </svg>
+        </button>
+      </div>
+    </div>
   </div>
 </section>
