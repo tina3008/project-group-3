@@ -1,7 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-	background: #1c1d20;
-	cards: #242527;
+  font-family: Inter Tight, sans-serif;
+  font-display: auto;
+  background: #1c1d20;
+  color: #fafafa;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  display: flex;
+}
+
+/* cards: #242527;
 	arrow: #3b3b3b;
-	button-text: #ed3b44;
-	color: #fafafa;
+	button-text: #ed3b44; */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
 }
