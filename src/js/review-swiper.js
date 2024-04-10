@@ -1,8 +1,8 @@
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-const swiperContainer = document.querySelector('.swiper');
+const swiperContainer = document.querySelector('.swiper-container');
 
 // const swiper = new Swiper(swiperContainer, {
 //   modules: [Navigation],
@@ -24,21 +24,27 @@ const swiperContainer = document.querySelector('.swiper');
 //   autoWidth: false,
 // });
 const swiper = new Swiper(swiperContainer, {
-  modules: [Navigation],
+  modules: [Navigation, Keyboard],
   navigation: {
     nextEl: '.button-next',
     prevEl: '.button-prev',
   },
   direction: 'horizontal',
-  effect: 'slide',
-
+  spaceBetween: 24,
+  autoHeight: false,
+  autoWidth: false,
+  centeredSlides: true,
+  watchOverflow: true,
+  slidesPerView: 'auto',
+  slidesPerGroup: 1,
   keyboard: {
     enabled: true,
     onlyInViewport: true,
+    pageUpDown: true,
   },
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      slidesPerView: 'auto',
     },
     767: {
       slidesPerView: 2,
@@ -48,3 +54,4 @@ const swiper = new Swiper(swiperContainer, {
     },
   },
 });
+swiper.updateSlides();
