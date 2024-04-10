@@ -71,3 +71,49 @@ img {
   width: 100%;
   height: auto;
 }
+
+.about-me-list-accordion {
+  margin-top: 32px;
+  position: static;
+  max-width: 343px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+.about-me-item-caption-and-button-wrapper {
+  max-width: 343px;
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  margin-bottom: 12px;
+}
+
+.about-me-accordion-caption {
+  color: rgba(250, 250, 250, 0.4);
+  font-family: Inter Tight;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -2%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.about-me-accordion-button-trigger {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 9px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100px;
+  background-color: transparent;
+}
