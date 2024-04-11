@@ -1,6 +1,7 @@
 import axios from 'axios';
-
-const baseURL = 'https://portfolio-js.b.goit.study/api/reviews';
+import iziToast from "izitoast";
+import "izitoast/dist/css/iziToast.min.css";
+const baseURL = 'https://portfolio-js.b.goit.study/api';
 
 export async function fetchReviews(params) {
     const END_POINT = '/reviews';
@@ -22,7 +23,10 @@ export async function fetchRequests(params) {
         const response = await axios.get(url);
         return response.data;
     } catch (error) {
-        console.error('Error fetching images:', error);
-        throw error;
-    }
+        iziToast.error({
+        color: 'red',
+        message: '❌ Sorry, there are mistake. Please try again!',
+        position: 'topRight',
+      });
+  }
 }
