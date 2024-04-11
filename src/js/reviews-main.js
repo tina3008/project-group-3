@@ -5,16 +5,12 @@ import { BUTTON_NEXT, BUTTON_PREV, swiper } from './review-swiper';
 async function getReviews() {
   try {
     const reviews = await fetchReviews();
-    // const currentIndex = swiper.realIndex;
     const totalItems = reviews.length;
     if (totalItems === 0) {
       reviewNotFound();
     } else {
       renderReviews(reviews);
     }
-    // if (currentIndex === totalItems - 1) {
-    //   disableButtonNext();
-    // }
   } catch (error) {
     console.error('Error fetching reviews:', error);
   }

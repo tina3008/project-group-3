@@ -1,4 +1,11 @@
 /* * ====== mobil===== */
+@media screen and (min-width: 320px) {
+  .reviews-list-items {
+    padding: 22px 12px;
+    width: 300px;
+  }
+}
+
 .reviews {
   max-width: 375px;
   display: flex;
@@ -33,12 +40,10 @@
   box-sizing: border-box;
   padding: 32px 24px;
   max-width: 342px;
-  height: 302px;
+  height: 302px !important;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
-}
-.swiper-slide {
-  height: 302px !important;
+  text-overflow: ellipsis;
 }
 
 .reviews-image {
@@ -75,7 +80,7 @@
   fill: transparent;
 }
 .arrow-container {
-  margin-top: 64px;
+  margin-top: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,10 +104,11 @@
 .last-button {
   border: 1px solid rgba(250, 250, 250, 0.2);
 }
-@media screen and (width: 320px) {
-  .reviews-list-items {
-    padding: 22px 12px;
-    width: 300px;
+
+/** =========TABLET========== */
+
+@media screen and (min-width: 767px) {
+  .reviews {
+    min-width: 704px;
   }
 }
-/** =========TABLET========== */

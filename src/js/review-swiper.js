@@ -14,11 +14,10 @@ export const swiper = new Swiper(swiperContainer, {
   },
 
   direction: 'horizontal',
-  spaceBetween: 22,
   autoHeight: false,
   autoWidth: false,
-  centeredSlides: true,
-  // watchOverflow: true,
+  // centeredSlides: true,
+  watchOverflow: true,
   keyboard: {
     enabled: true,
     onlyInViewport: true,
@@ -27,12 +26,15 @@ export const swiper = new Swiper(swiperContainer, {
   breakpoints: {
     320: {
       slidesPerView: 'auto',
+      spaceBetween: 22,
     },
     767: {
       slidesPerView: 2,
+      spaceBetween: 16,
     },
     1439: {
       slidesPerView: 4,
+      spaceBetween: 16,
     },
   },
 });
