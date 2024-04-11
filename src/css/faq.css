@@ -20,6 +20,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0 12px;
+  gap: 12px;
 }
 
 .faq-title {
@@ -51,21 +52,27 @@
 }
 
 .faq-content-div-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 100px;
   padding: 7px;
   width: 34px;
   height: 34px;
+  background: transparent;
 }
 
 .faq-content-div-svg {
   width: 20px;
   height: 20px;
+  fill: #ffffff;
 }
 
 .faq-content-text {
   font-weight: 500;
   color: rgba(250, 250, 250, 0.6);
+  /* display: none; */
 }
 
 .faq-content {
@@ -74,5 +81,40 @@
   gap: 16px;
 }
 
-@media screen and (width: 320px) {
+.faq-bar-svg {
+  stroke-width: 1px;
+  stroke: rgba(250, 250, 250, 0.2);
+  margin: 20px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .faq {
+    margin-top: 96px;
+    margin-bottom: 96px;
+  }
+
+  .faq-container {
+    max-width: 768px;
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 704px;
+  }
+
+  .faq-content-div-header {
+    max-width: 575px;
+  }
+
+  .faq-content {
+    gap: 26px;
+  }
+
+  .faq-bar-svg {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    width: 704px;
+  }
 }
