@@ -1,4 +1,3 @@
-import { fetchReviews } from './api';
 
 const reviewsList = document.querySelector('.reviews-list');
 
@@ -17,7 +16,7 @@ function templateReview(_id, author, avatar_url, review) {
   `;
 }
 
-function reviewNotFound() {
+export function reviewNotFound() {
   const markup = '<p class="end-message">Not found</p>';
   reviewsList.insertAdjacentHTML('afterend', markup);
 }
@@ -30,22 +29,7 @@ function templateReviews(reviews) {
     .join('');
 }
 
-function renderReviews(reviews) {
+export function renderReviews(reviews) {
   const markup = templateReviews(reviews);
   reviewsList.insertAdjacentHTML('beforeend', markup);
 }
-
-async function getReviews() {
-  try {
-    const reviews = await fetchReviews();
-    if (reviews.length === 0) {
-      reviewNotFound();
-    } else {
-      renderReviews(reviews);
-    }
-  } catch (error) {
-    console.error('Error fetching reviews:', error);
-  }
-}
-
-getReviews();

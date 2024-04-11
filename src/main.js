@@ -1,3 +1,3 @@
 import './js/api';
-import './js/render-review';
+import './js/reviews-main';
 import './js/review-swiper';

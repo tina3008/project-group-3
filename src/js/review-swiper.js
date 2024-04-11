@@ -3,12 +3,14 @@ import { Navigation, Keyboard, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 const swiperContainer = document.querySelector('.swiper');
+export const BUTTON_NEXT = document.querySelector('.button-next-svg');
+export const BUTTON_PREV = document.querySelector('.button-prev');
 
-const swiper = new Swiper(swiperContainer, {
+export const swiper = new Swiper(swiperContainer, {
   modules: [Navigation, Keyboard, Pagination],
   navigation: {
-    nextEl: '.button-next',
-    prevEl: '.button-prev',
+    nextEl: BUTTON_NEXT,
+    prevEl: BUTTON_PREV,
   },
 
   direction: 'horizontal',
@@ -29,17 +31,28 @@ const swiper = new Swiper(swiperContainer, {
     767: {
       slidesPerView: 2,
     },
-    1440: {
+    1439: {
       slidesPerView: 4,
     },
   },
 });
-swiperContainer.slideNext();
-swiper.params.cssMode = true;
-swiper.params.scrollbar = {
-  el: '.swiper-scrollbar',
-  draggable: true,
-};
+
 swiper.update();
-document.querySelector('.swiper-wrapper').style.transform =
-  'translate3d(-55px, 0px, 0px)';
+
+// function buttonDisable() {
+//   const items = document.querySelectorAll('.reviews-list');
+//   const currentIndex = swiper.realIndex;
+//   const totalItems = items.length;
+
+//   if (currentIndex === totalItems - 1) {
+//     disableButtonNext();
+//     console.log('Останній елемент');
+//   } else if (totalItems === 0) {
+//     disableButtonPrevious();
+//   }
+
+//   if (BUTTON_NEXT) {
+//     BUTTON_NEXT.classList.add('last-button');
+//   }
+// }
+// buttonDisable();
