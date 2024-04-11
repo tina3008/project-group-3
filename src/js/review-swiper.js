@@ -16,6 +16,7 @@ export const swiper = new Swiper(swiperContainer, {
   direction: 'horizontal',
   autoHeight: false,
   autoWidth: false,
+
   // centeredSlides: true,
   watchOverflow: true,
   keyboard: {
@@ -32,7 +33,11 @@ export const swiper = new Swiper(swiperContainer, {
       slidesPerView: 2,
       spaceBetween: 16,
     },
-    1439: {
+    1280: {
+      slidesPerView: 3,
+      spaceBetween: 42,
+    },
+    1440: {
       slidesPerView: 4,
       spaceBetween: 16,
     },
