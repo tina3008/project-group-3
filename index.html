@@ -11,10 +11,27 @@
     <title>project-group-3</title>
     
     <script type="module" crossorigin src="/project-group-3/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-group-3/assets/index-98197f54.css">
+    <link rel="modulepreload" crossorigin href="/project-group-3/assets/vendor-0d4de1a9.js">
+    <link rel="stylesheet" href="/project-group-3/assets/vendor-1f9fe898.css">
+    <link rel="stylesheet" href="/project-group-3/assets/index-3eb0c307.css">
   </head>
   <body>
-    
+    <header class="header">
+    <div class="header-container">
+    <img src="../img/icons/logo_vector.svg" alt="logo">
+    <div id="profile">
+        <a href="#" class="menu-link" id="profile-link">Menu</a>
+        <div id="dropdown">
+            <a href="#">About me</a>
+            <a href="#">Benefits</a>
+            <a href="#">Projects</a>
+            <a href="#">FAQ</a>
+        </div>
+    </div>
+    <button class="header-button">Order the project</button>
+</div>
+ 
+</header>
 
 
     <main>
@@ -109,7 +126,118 @@
   </div>
 </section>
 
-      
+      <section class="projects-section" id="projects">
+  <h2 class="projects-title">Projects</h2>
+  <ul class="projects-list">
+    <li class="projects-item">
+      <div class="projects-skills"><p>#react</p></div>
+      <div class="projects-skills"><p>#js</p></div>
+      <div class="projects-skills"><p>#node js</p></div>
+      <div class="projects-skills"><p>#git</p></div>
+      <h3>Programming Across Borders: Ideas, Technologies, Innovations</h3>
+      <a
+        class="projects-link"
+        href="https://github.com/tina3008/project-group-3"
+        target="_blank"
+        >See project</a
+      >
+      <div class="projects-img-wrapper">
+        <picture>
+          <source
+            srcset="/project-group-3/assets/read-journey-tab-desk-2473869a.jpg 1x, /project-group-3/assets/read-journey-tab-desk@2x-c047f592.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/project-group-3/assets/read-journey-938ddb3d.jpg 1x, /project-group-3/assets/read-journey@2x-7a34f649.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img
+            class="projects-img"
+            src="/project-group-3/assets/read-journey-938ddb3d.jpg"
+            alt="Read journey project image"
+          />
+        </picture>
+      </div>
+    </li>
+    <!-- Інші елементи списку поки що приховала класом visually-hidden, вони пізніше будуть горизонтально скролитись -->
+    <li class="projects-item visually-hidden">
+      <div class="projects-skills"><p>#react</p></div>
+      <div class="projects-skills"><p>#js</p></div>
+      <div class="projects-skills"><p>#node js</p></div>
+      <div class="projects-skills"><p>#git</p></div>
+      <h3>Programming Across Borders: Ideas, Technologies, Innovations</h3>
+      <a
+        class="projects-link"
+        href="https://github.com/tina3008/project-group-3"
+        target="_blank"
+        >See project</a
+      >
+      <div class="projects-img-wrapper">
+        <picture>
+          <source
+            srcset="/project-group-3/assets/petlove-tab-desk-5e877914.jpg 1x, /project-group-3/assets/petlove-tab-desk@2x-540eb4f9.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/project-group-3/assets/petlove-546f382e.jpg 1x, /project-group-3/assets/petlove@2x-b8ad9916.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img
+            class="projects-img"
+            src="/project-group-3/assets/petlove-546f382e.jpg"
+            alt="Petlove project image"
+          />
+        </picture>
+      </div>
+    </li>
+    <li class="projects-item visually-hidden">
+      <div class="projects-skills"><p>#react</p></div>
+      <div class="projects-skills"><p>#js</p></div>
+      <div class="projects-skills"><p>#node js</p></div>
+      <div class="projects-skills"><p>#git</p></div>
+      <h3>Programming Across Borders: Ideas, Technologies, Innovations</h3>
+      <a
+        class="projects-link"
+        href="https://github.com/tina3008/project-group-3"
+        target="_blank"
+        >See project</a
+      >
+      <div class="projects-img-wrapper">
+        <picture>
+          <source
+            srcset="/project-group-3/assets/vocab-builder-tab-desk-36eab809.jpg 1x, /project-group-3/assets/vocab-builder-tab-desk@2x-5096b595.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/project-group-3/assets/vocab-builder-9036060c.jpg 1x, /project-group-3/assets/vocab-builder@2x-67be4566.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img
+            class="projects-img"
+            src="/project-group-3/assets/vocab-builder-9036060c.jpg"
+            alt="VocabBuilder project image"
+          />
+        </picture>
+      </div>
+    </li>
+  </ul>
+  <button class="prev-btn" type="button">
+    <svg class="arrow-left-icon" width="24" height="24" aria-label="arrow left">
+      <use href="#"></use>
+    </svg>
+  </button>
+  <button class="next-btn" type="button">
+    <svg
+      class="arrow-right-icon"
+      width="24"
+      height="24"
+      aria-label="arrow right"
+    >
+      <use href="#"></use>
+    </svg>
+  </button>
+</section>
+
       <section class="faq" id="faq">
   <div class="faq-container">
     <h2 class="faq-title">FAQ</h2>
@@ -233,32 +361,30 @@
       
       <section class="reviews" id="reviews">
   <div class="container-wrapper">
-    <h2 class="reviews-header">REVIEWS</h2>
-    <div class="swiper">
-      <ul class="reviews-list swiper-wrapper">
-        <li class="reviews-list-items swiper-slide" data-id="${_id}">
-          <img
-            class="reviews-image"
-            src="https://ftp.goit.study/img/avatars/4.jpg"
-            alt=""
-            width="48"
-            height="48"
-            loading="lazy"
-          />
-          <div class="swiper-lazy-preloader"></div>
-          <div class="reviews-text-contant">
-            <h3 class="reviews-name-header">"Natalia"</h3>
-            <p class="reviews-main-text">
-              "Work with was extraordinary! He turned out to be a very competent
-              and responsible specialist. The projects were completed on time
-              and the result exceeded my expectations."
-            </p>
-          </div>
-        </li>
-      </ul>
+    <div class="container-header">
+      <h2 class="reviews-header">REVIEWS</h2>
     </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+
+    <div class="swiper">
+      <ul class="reviews-list swiper-wrapper"></ul>
+    </div>
+    <div class="arrow-container">
+      <button class="button-prev button-prev-svg" type="button">
+        <svg class="arrow-swiper" width="24" height="24">
+          <use
+            xlink:href="../img/svg-reviews/arrow.svg#icon-arrow-narrow-right"
+          />
+        </svg>
+      </button>
+
+      <button class="button-next button-next-svg" type="button">
+        <svg class="arrow-swiper" width="24" height="24">
+          <use
+            xlink:href="../img/svg-reviews/arrow.svg#icon-arrow-narrow-rightarrrR"
+          />
+        </svg>
+      </button>
+    </div>
   </div>
 </section>
 
