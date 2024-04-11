@@ -17,10 +17,13 @@
   margin-top: 0;
   margin-right: 16px;
   margin-bottom: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .about-me-section {
   padding-top: 32px;
+  padding-bottom: 82px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -146,4 +149,34 @@ img {
   margin-top: 20px;
   max-width: 343px;
   border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.about-me-swiper {
+  margin-top: 32px;
+}
+
+.about-me-swiper-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.about-me-swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.about-me-swiper-slide-backing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ed3b44;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  z-index: -1;
 }
