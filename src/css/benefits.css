@@ -34,7 +34,7 @@
   color: rgba(250, 250, 250, 0.6);
 }
 .benefit-footer {
-  display: block;
+  display: flex;
 }
 .benefit-footer-link {
   font-weight: 500;
@@ -101,8 +101,10 @@
 		width: 1376px;
 		display: flex;
 	}
-	.benefit_main_head{
-		display: flex;
-		width:696px;
+	.benefit_main_head{		
+		width: calc(100% / 2);
+	}
+	.benefit-div{
+		width: calc(100% / 2);
 	}
 }
