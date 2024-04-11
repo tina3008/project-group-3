@@ -1,10 +1,33 @@
 <section class="footer-section" id="work-together-section">
   <div class="footer-container">
-    <img class="footer-image" src="" alt="Profile photo" />
-    <h2 class="footer-title">
-      <span>Let's <span class="footer-span">work</span></span>
-      together
-    </h2>
+    <div class="footer-heading">
+      <picture>
+        <source
+          srcset="
+            img/footer/profile-desktop@1x.png,
+            img/footer/profile-desktop@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+          img/footer/profile-mob@1x.png
+          img/footer/profile-mob@2x.png 2x
+        "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="footer-image"
+          src="img/footer/profile-desktop@1x.png"
+          alt="Profile photo"
+          width="70"
+          height="70"
+        />
+      </picture>
+      <h2 class="footer-title">
+        <span>Let's <span class="footer-span">work</span></span> together
+      </h2>
+    </div>
     <form class="footer-form">
       <label for="user-email">
         <input
@@ -28,8 +51,12 @@
       <button class="footer-button" type="submit">Send</button>
     </form>
     <div class="footer-contacts">
-      <a class="footer-contacts-data" href="">lloydjefferson@gmail.com</a>
-      <a class="footer-contacts-data" href="">+380 11 1111 11 11</a>
+      <a class="footer-contacts-data" href="mailto:lloydjefferson@gmail.com"
+        >lloydjefferson@gmail.com</a
+      >
+      <a class="footer-contacts-data" href="tel:+380 11 1111 11 11"
+        >+380 11 1111 11 11</a
+      >
     </div>
   </div>
 </section>
