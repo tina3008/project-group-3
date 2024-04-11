@@ -27,5 +27,9 @@
 <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.7619" d="M16 0.381c8.626 0 15.619 6.993 15.619 15.619s-6.993 15.619-15.619 15.619c-8.626 0-15.619-6.993-15.619-15.619s6.993-15.619 15.619-15.619z"></path>
 <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.5238" d="M19.81 14.095l-3.81 3.81-3.81-3.81"></path>
 </symbol>
+<symbol id="modal-icon" viewBox="0 0 14 14">
+<path fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.5 1.5L1.5 12.5" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</symbol>
 </defs>
 </svg>
