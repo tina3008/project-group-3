@@ -1,10 +1,9 @@
-
 const reviewsList = document.querySelector('.reviews-list');
 
 function templateReview(_id, author, avatar_url, review) {
   return `
      <li class="reviews-list-items swiper-slide" data-id="${_id}">
-     <img class="reviews-image" src="${avatar_url}" alt="" 
+     <img class="reviews-image" src="${avatar_url}" alt="Photo" 
             width="48"
             height="48"
             loading="lazy" />
