@@ -12,20 +12,27 @@
   overflow: hidden;
 }
 
-.about-me-container {
+/* .about-me-container {
   margin-left: 16px;
   margin-top: 0;
   margin-right: 16px;
   margin-bottom: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+} */
+
+.about-me-container-section {
+  margin-left: 16px;
+  margin-top: 0;
+  margin-right: 16px;
+  margin-bottom: 0;
 }
 
 .about-me-section {
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .about-me-description {
@@ -88,6 +95,7 @@ img {
 
 .about-me-item-caption-and-button-wrapper {
   max-width: 343px;
+  min-width: 320px;
   height: 36px;
   display: flex;
   justify-content: space-between;
@@ -147,6 +155,7 @@ img {
 .line-between-accordion-item {
   margin-top: 20px;
   max-width: 343px;
+  min-width: 320px;
   border: 1px solid rgba(250, 250, 250, 0.2);
 }
 
@@ -181,10 +190,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .about-me-container {
+  .about-me-container-section {
     margin-left: 32px;
     margin-right: 32px;
-    width: 704px;
   }
 
   .about-me-section {
@@ -237,6 +245,7 @@ img {
 
   .about-me-item-caption-and-button-wrapper {
     max-width: 704px;
+    min-width: 704px;
     height: 40px;
     margin-bottom: 8px;
   }
@@ -269,10 +278,6 @@ img {
 }
 
 @media screen and (min-width: 1440px) {
-  .about-me-container {
-    width: 1376px;
-  }
-
   .about-me-section {
     padding-top: 48px;
     padding-bottom: 82px;
@@ -317,9 +322,12 @@ img {
 
   .about-me-item-caption-and-button-wrapper {
     max-width: 1376px;
+    min-width: 1376px;
   }
 
-  /* =================================== */
+  .about-me-accordion-pannel {
+    margin-left: 696px;
+  }
 
   .line-between-accordion-item {
     margin-top: 32px;
