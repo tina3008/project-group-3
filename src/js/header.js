@@ -10,7 +10,7 @@ document.getElementById("profile-link").addEventListener("click", function(event
       dropdown.classList.add("active");
       setTimeout(() => {
         dropdown.style.opacity = 1;
-      }, 10); // Небольшая задержка для плавного появления
+      }, 10); 
     }
   });
   
