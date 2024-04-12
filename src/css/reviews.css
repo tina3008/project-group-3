@@ -13,6 +13,7 @@
   justify-content: center;
   margin: 0 auto;
   min-width: 0;
+  padding: 32px 0;
 }
 .reviews-header {
   color: rgba(250, 250, 250, 0.4);
@@ -47,6 +48,8 @@
 
 .reviews-image {
   border-radius: 10px;
+  height: 48px;
+  width: 48px;
 }
 .reviews-text-content {
   margin-top: 32px;
@@ -110,18 +113,20 @@
 @media screen and (min-width: 767px) {
   .reviews {
     min-width: 704px;
+    padding: 48px 0;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .reviews {
     min-width: 1180px;
-    
+    padding: 82px 0;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .reviews {
     min-width: 1376px;
+    padding: 82px 0;
   }
 }
