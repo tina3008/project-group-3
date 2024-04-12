@@ -27,7 +27,7 @@ export const swiper = new Swiper(swiperContainer, {
   breakpoints: {
     320: {
       slidesPerView: 'auto',
-      spaceBetween: 22,
+      spaceBetween: 18,
     },
     767: {
       slidesPerView: 2,
@@ -35,7 +35,7 @@ export const swiper = new Swiper(swiperContainer, {
     },
     1280: {
       slidesPerView: 3,
-      spaceBetween: 42,
+      spaceBetween: 16,
     },
     1440: {
       slidesPerView: 4,
