@@ -8,6 +8,6 @@ modalBtn.addEventListener("click", (e) => {
   modalWindow.classList.remove("is-open");
 });
 
-openModal.addEventListener("click", (e) => {
+openModal.addEventListener("submit", (e) => {
   modalWindow.classList.add("is-open");
 });
