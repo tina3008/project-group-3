@@ -19,12 +19,9 @@
     color: var(--main-text);
 }
 .header-button{
-    display: flex;
-    align-items: center;
-    background-color: #ED3B44;
-    color: #FAFAFA;
-    border-radius: 60px;
+  display: none;
 }
+
 .header-img{
   border-radius: 18px;
 width: 80px;
@@ -37,6 +34,12 @@ height: 80px;
   border: none;
   background-color: transparent;
   padding: 0;
+}
+.header-logo{
+  display: flex;
+}
+.logo-paragraph{
+  padding-left: 8px;
 }
 /* ======================================MOBILE HEADER STYLES================================== */
 
