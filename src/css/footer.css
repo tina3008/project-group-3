@@ -1,0 +1,128 @@
+.footer-section {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.footer-container {
+  max-width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-heading {
+  display: flex;
+  gap: 8px;
+}
+
+.footer-image {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-title {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fafafa;
+  margin-bottom: 63px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.footer-span {
+  color: #ed3b44;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 0;
+  margin-bottom: 64px;
+}
+
+.footer-input {
+  outline: 0px solid transparent;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 44px;
+  transition: border-color 250ms linear;
+  color: #fafafa;
+}
+
+.footer-input::placeholder {
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.footer-input:focus {
+  border-color: rgba(250, 250, 250, 0.5);
+}
+
+.footer-button {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  background-color: rgb(237, 59, 68);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 40px 32px 41px;
+  border: none;
+  margin-top: 16px;
+  transition: background-color 250ms linear;
+}
+
+.footer-button:hover,
+.footer-button:focus {
+  background-color: rgb(224, 55, 63);
+}
+
+.footer-contacts {
+  display: flex;
+  gap: 4px;
+  margin-top: 0;
+}
+
+.footer-contacts-data {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  line-height: 17px;
+  text-align: center;
+  color: #fafafa;
+  padding: 10px 12px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  height: 37px;
+  transition: border-color 250ms linear;
+}
+
+.footer-contacts-data:hover,
+.footer-contacts-data:focus {
+  border-color: #fafafa;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-image {
+    width: 70px;
+    height: 70px;
+  }
+}
