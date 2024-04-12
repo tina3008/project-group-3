@@ -1,0 +1,121 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .covers {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .covers-container {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(217, 217, 217, 0.04),
+        rgba(217, 217, 217, 0.04)
+      ),
+      url(../img/covers-img/fon-mob.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 375px;
+    height: 508px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px),
+    screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .covers {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(217, 217, 217, 0.04),
+          rgba(217, 217, 217, 0.04)
+        ),
+        url(../img/covers-img/fon-mob@2x.png);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .covers {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .covers-container {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(217, 217, 217, 0.04),
+        rgba(217, 217, 217, 0.04)
+      ),
+      url(../img/covers-img/fon-tab.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 768px;
+    height: 960px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .covers {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(217, 217, 217, 0.04),
+          rgba(217, 217, 217, 0.04)
+        ),
+        url(../img/covers-img/fon-tab@2x.png);
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .covers {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
+  .covers-container {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(217, 217, 217, 0.04),
+        rgba(217, 217, 217, 0.04)
+      ),
+      url(../img/covers-img/fon-desc.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 1440px;
+    height: 960px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+    screen and (min-resolution: 2dppx) and (min-width: 1440px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+    .covers {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(217, 217, 217, 0.04),
+          rgba(217, 217, 217, 0.04)
+        ),
+        url(../img/covers-img/fon-desc@2x.png);
+    }
+  }
+}

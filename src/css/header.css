@@ -1,7 +1,13 @@
+/* ======================================MOBILE HEADER STYLES================================== */
+@media screen and (max-width: 767px ) {
+  .menu{
+    display: none;
+  }
+}
 .header-container {
     display: flex;
     justify-content: space-between;
-    padding: 32px 32px;
+    padding: 32px 16px;
 }
 .menu-link{
     font-family: var(--font-family);
@@ -13,25 +19,67 @@
     color: var(--main-text);
 }
 .header-button{
-<<<<<<< Updated upstream
     display: flex;
     align-items: center;
     background-color: #ED3B44;
     color: #FAFAFA;
     border-radius: 60px;
+
+.header-img{
+  border-radius: 18px;
+width: 80px;
+height: 80px;
+}
+.header-mobile-menu-open-btn{
+  stroke: #1b414b;
+  display: flex;
+  line-height: 0;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+/* ======================================MOBILE HEADER STYLES================================== */
+
+
+/* ======================================TABLET HEADER STYLES================================== */
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding: 24px 32px;
+}
+.header-mobile-menu-open-btn{
+  display: none;
+}
+.menu-list{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--main-text);
+  padding: 10px;
+width: 60px;
+height: 39px;
+}
+.header-button{
+  border-radius: 60px;
 padding: 18px 50px;
 width: 177px;
 height: 55px;
-font-weight: 500;
-font-size: 16px;
-letter-spacing: -0.02em;
+background-color: #ED3B44;
+color: #FAFAFA;
+  line-height: 1.19;
+  letter-spacing: -.02em;
+  padding: 18px 36px;
+  display: block;
+  border: 1px solid rgba(250, 250, 250, .2);
+  border-radius: 60px;
 }
 .header-button:hover{
-    background: #e0373f;
+  background: #e0373f;
 }
 .header-button:focus{
     background: #e0373f;
-=======
   display: flex;
   width: 177px;
   height: 55px;
@@ -50,42 +98,51 @@ letter-spacing: -0.02em;
 }
 .header-button:hover{
   background-color: #e0373f;
->>>>>>> Stashed changes
+  background: #e0373f;
+}
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0; 
+  transition: opacity 0.2s ease-in-out;
 }
 
+.menu.active .menu-dropdown {
+  display: block;
+  opacity: 1; 
+}
 
+.menu-dropdown a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+}
 
+.menu-dropdown a:hover {
+  background-color: #f4f4f4;
+  transform: scale(1.1);
+  color: #e0373f;
+}
 
+.menu-dropdown a:focus{
+  background-color: #f4f4f4;
+  transform: scale(1.1);
+  color: #e0373f;
+} 
+.menu.active .menu-dropdown {
+  display: block;
+}
+}
 
-#dropdown {
-    display: none;
-    position: absolute;
-    background-color: transparent;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    left: 52%;
-    transform: translateX(-50%);
-    opacity: 0; /* Скрываем меню initially */
-    transition: opacity 0.2s ease-in-out; /* Плавное появление */
-  }
-  
-  #profile.active #dropdown {
-    display: block;
-    opacity: 1; /* Показываем меню */
-  }
-  
-  #dropdown a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    transition: 0.2s ease-in-out;
-  }
-  
-  #dropdown a:hover {
-    background-color: #f4f4f4;
-    transform: scale(1.1);
-  }
-  
+/* ======================================TABLET HEADER STYLES================================== */
+/* ======================================DESKTOP HEADER STYLES================================== */
+/* ======================================DESKTOP HEADER STYLES================================== */

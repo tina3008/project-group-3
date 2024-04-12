@@ -1,16 +1,26 @@
 <header class="header">
-    <div class="header-container">
-    <img src="../img/icons/logo_vector.svg" alt="logo">
-    <div id="profile">
-        <a href="#" class="menu-link" id="profile-link">Menu</a>
-        <div id="dropdown">
-            <a href="#">About me</a>
-            <a href="#">Benefits</a>
-            <a href="#">Projects</a>
-            <a href="#">FAQ</a>
-        </div>
+  <div class="header-container">
+    <a href="./index.html"><img class="header-img" src="../img/header-svg/image.jpg" alt="logo" />
+    </a>
+    <div class="menu" id="profile">
+      <a href="#" class="menu-list" id="profile-link">Menu</a>
+      <div class="menu-dropdown" id="dropdown">
+        <a class="menu-link" href="#">About me</a>
+        <a class="menu-link" href="#benefit-link">Benefits</a>
+        <a class="menu-link" href="#projects">Projects</a>
+        <a class="menu-link" href="#faq">FAQ</a>
+      </div>
     </div>
-    <button href="./header.html" class="header-button">Order the project</button>
-</div>
-    <script type="module" src="../js/header.js"></script>
+    <button class="header-button">Order the project</button>
+    <button class="header-mobile-menu-open-btn" type="button">
+      <svg
+        class="benefit_icon"
+        width="28"
+        height="28"
+        aria-label="icon Expertise"
+      >
+        <use href="../img/header-svg/symbol-defs.svg#icon-menu-05"></use>
+      </svg>
+    </button>
+  </div>
 </header>
