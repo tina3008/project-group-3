@@ -1,3 +1,4 @@
+import iziToast from 'izitoast';
 import { fetchReviews } from './api';
 import { reviewNotFound, renderReviews } from './render-review';
 import { BUTTON_NEXT, BUTTON_PREV, swiper } from './review-swiper';
@@ -5,18 +6,19 @@ import { BUTTON_NEXT, BUTTON_PREV, swiper } from './review-swiper';
 async function getReviews() {
   try {
     const reviews = await fetchReviews();
-    // const currentIndex = swiper.realIndex;
     const totalItems = reviews.length;
     if (totalItems === 0) {
       reviewNotFound();
     } else {
       renderReviews(reviews);
     }
-    // if (currentIndex === totalItems - 1) {
-    //   disableButtonNext();
-    // }
   } catch (error) {
-    console.error('Error fetching reviews:', error);
+    iziToast.error({
+      color: 'red',
+      message: '❌ Sorry, there is an error. Please try again later!',
+      position: 'topRight',
+    });
+    reviewNotFound();
   }
 }
 const nextObserver = new MutationObserver(mutations => {
