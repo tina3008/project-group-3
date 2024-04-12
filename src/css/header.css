@@ -15,8 +15,9 @@
   display: none;
 }
 .header-img{
-  width: 172px;
-  height: 80px;
+  border-radius: 18px;
+width: 80px;
+height: 80px;
 }
 .header-mobile-menu-open-btn{
   stroke: #1b414b;
