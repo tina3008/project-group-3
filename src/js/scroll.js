@@ -9,6 +9,5 @@ modalBtn.addEventListener("click", (e) => {
 });
 
 openModal.addEventListener("click", (e) => {
-  e.preventDefault();
   modalWindow.classList.add("is-open");
 });
