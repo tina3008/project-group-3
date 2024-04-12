@@ -14,8 +14,15 @@
 
 .footer-heading {
   display: flex;
-  gap: 8px;
 }
+
+
+.footer-image {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+}
+
 
 .footer-title {
   font-family: 'Inter Tight', sans-serif;
@@ -129,13 +136,20 @@
     padding-top: 80px;
   }
 
-  .footer-heading {
-    gap: 20px;
+ work-together-branch
+  .footer-image {
+    width: 70px;
+    height: 70px;
+
   }
 
   .footer-title {
     font-size: 64px;
     gap: 10px;
+  }
+
+  .half-title-span {
+    padding-left: 90px !important;
   }
 
   .footer-form {
