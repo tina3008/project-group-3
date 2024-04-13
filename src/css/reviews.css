@@ -75,6 +75,10 @@
   stroke: rgb(250, 250, 250, 100%);
   fill: transparent;
 }
+.button-prev:active .arrow-swiper,
+.button-next:active .arrow-swiper {
+  stroke: rgb(59, 59, 59);
+}
 .arrow-container {
   margin-top: 32px;
   display: flex;
