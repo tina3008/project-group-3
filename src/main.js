@@ -4,7 +4,6 @@ import './js/review-swiper';
 
 import './js/faq-accordion';
 
-
-
 import './js/header';
 
+import './js/faq-padd';

@@ -85,6 +85,18 @@
   stroke-width: 1px;
   stroke: rgba(250, 250, 250, 0.2);
   margin: 20px 0;
+
+  border: 1px solid rgba(250, 250, 250, 0.2);
+
+  /* fill: rgba(250, 250, 250, 0.2); */
+}
+
+.add-b {
+  display: none;
+}
+
+.faq-list-item:nth-child(even) {
+  padding-right: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -116,5 +128,103 @@
     margin-top: 24px;
     margin-bottom: 32px;
     width: 704px;
+  }
+
+  .add-b {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .faq {
+    margin-top: 164px;
+    margin-bottom: 164px;
+  }
+
+  .faq-container {
+    max-width: 1440px;
+  }
+
+  .faq-list {
+    display: flex;
+    align-items: center;
+    width: 1376px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .faq-list-item {
+    max-width: 688px;
+
+    position: relative; /* Додати позиціонування для контексту псевдоелементів */
+    /* padding-left: 20px; */
+  }
+
+  .faq-content-div-header {
+    max-width: 575px;
+  }
+
+  .faq-content {
+    gap: 26px;
+    max-width: 656px;
+  }
+
+  .faq-bar-svg {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    width: 708px;
+    /* width: 688px; */
+  }
+
+  /*------------------------------------------*/
+
+  /* .faq-list-item:nth-child(even) {
+    padding-left: 20px;
+  } */
+
+  .faq-list-item:nth-child(2n)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    transform: translateY(-15%);
+    width: 2px;
+    /* height: 100%; */
+    height: 249px;
+    background-color: rgba(250, 250, 250, 0.2);
+    z-index: -1;
+  }
+
+  .l-bar {
+    width: 1376px;
+  }
+
+  .s-item {
+    padding-top: 66px;
+  }
+
+  .l-item {
+    /* padding-top: 14px; */
+    padding-bottom: 40px;
+    /* padding-bottom: 75px; */
+  }
+
+  /* .f-bar {
+    margin-top: 48px;
+  } */
+
+  .ff-bar {
+    margin-top: 78px;
+    width: 1376px;
+  }
+
+  .ff-item {
+    padding-bottom: 60px;
+  }
+
+  .last-bar {
+    margin-bottom: 78px;
+    border: 1px solid #1c1d20;
   }
 }
