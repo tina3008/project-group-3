@@ -5,12 +5,10 @@
   height: 812px;
   padding-left: 16px;
   padding-right: 16px;
-  background: linear-gradient(
-    -90.57deg,
-    rgb(28, 29, 32) 49.692%,
-    rgb(105, 41, 45) 67.704%,
-    rgb(237, 59, 68) 99.891%
-  );
+  background: url(../img/hero-img/hero-backgroun.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
