@@ -12,4 +12,8 @@ import './js/header';
 
 import './js/faq-padd';
 
+
+import './js/projects-swiper';
+
 import './js/covers';
+
