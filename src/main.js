@@ -11,3 +11,5 @@ import './js/faq-accordion';
 import './js/header';
 
 import './js/faq-padd';
+
+import './js/projects-swiper';
