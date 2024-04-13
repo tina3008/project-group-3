@@ -1,15 +1,21 @@
+<<<<<<< Updated upstream
 .menu-container-mobile {
   position: relative;
 }
 
 .menu-background-mobile {
   background: url(../img/header/hero-backgroun.png) center/cover no-repeat;
+=======
+.modal{
+  background: url(./img/header/hero-backgroun.png);
+>>>>>>> Stashed changes
   position: fixed;
   z-index: 99;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+<<<<<<< Updated upstream
 }
 
 .menu-mobile {
@@ -90,4 +96,14 @@
   /* z-index: 100; */
   opacity: 0;
   pointer-events: none;
+=======
+  background-color: #0e1823;
+}
+.menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+>>>>>>> Stashed changes
 }
