@@ -8,7 +8,6 @@ import './js/api';
 
 import './js/faq-accordion';
 
-import './js/scroll';
 import './js/header';
 
-import './js/service-worker';
+import './js/faq-padd';
