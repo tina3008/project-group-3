@@ -8,13 +8,17 @@
             img/footer/profile-desktop@2x.png 2x
           "
           media="(min-width: 768px)"
+          width="70"
+          height="70"
         />
         <source
           srcset="
-          img/footer/profile-mob@1x.png
-          img/footer/profile-mob@2x.png 2x
-        "
+            img/footer/profile-mob@1x.png,
+            img/footer/profile-mob@2x.png 2x
+          "
           media="(max-width: 767px)"
+          width="44"
+          height="44"
         />
         <img
           class="footer-image"
@@ -25,7 +29,10 @@
         />
       </picture>
       <h2 class="footer-title">
-        <span>Let's <span class="footer-span">work</span></span> together
+        <span class="half-title-span" style="padding-left: 52px"
+          >Let's <span class="footer-span">work</span></span
+        >
+        <span> together</span>
       </h2>
     </div>
     <form class="footer-form">
@@ -35,6 +42,7 @@
           id="user-email"
           name="user-email"
           type="email"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           placeholder="clients@gmail.com"
           required
         />
@@ -46,9 +54,10 @@
           name="user-comment"
           type="text"
           placeholder="comments"
+          required
         />
       </label>
-      <button class="footer-button" type="submit">Send</button>
+      <button class="footer-button" type="submit" id="send-button">Send</button>
     </form>
     <div class="footer-contacts">
       <a class="footer-contacts-data" href="mailto:lloydjefferson@gmail.com"
