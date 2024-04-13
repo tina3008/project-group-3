@@ -13,11 +13,7 @@ import './js/header';
 import './js/faq-padd';
 
 
-import './js/about-me-accordion';
-
-
 import './js/projects-swiper';
 
 import './js/covers';
 
-import './js/about-me-accordion.js'

@@ -5,7 +5,7 @@
   height: 812px;
   padding-left: 16px;
   padding-right: 16px;
-  background: url(../img/hero-img/hero-mobile-background.png);
+  background: url(../img/hero-img/hero-backgroun.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -61,10 +61,6 @@
     height: 1024px;
     padding-left: 32px;
     padding-right: 32px;
-    background: url(../img/hero-img/hero-backgroun.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
 
   .hero-title {
