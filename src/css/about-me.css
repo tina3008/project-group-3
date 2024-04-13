@@ -12,16 +12,11 @@
   overflow: hidden;
 }
 
-.about-me-container-section {
-  margin-left: 16px;
-  margin-top: 0;
-  margin-right: 16px;
-  margin-bottom: 0;
-}
-
 .about-me-section {
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
   display: flex;
   justify-content: center;
 }
