@@ -12,6 +12,7 @@
   overflow: hidden;
 }
 
+
 @media screen and (max-width: 767px) {
   .covers {
     padding-top: 32px;
@@ -196,7 +197,13 @@
         url(../img/covers-img/fon-desc@2x.png);
     }
   }
-
+  
+  .covers-animation {
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
   @keyframes marqueeLine {
     from {
       transform: translateX(-50%);

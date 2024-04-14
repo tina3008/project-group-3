@@ -40,6 +40,7 @@
 
         background-color: #1c1d20; */
 
+
   width: 24px;
   height: 24px;
   background-color: transparent;
@@ -60,6 +61,7 @@
 .modal-btn-icon {
   padding: 0;
   fill: transparent;
+  stroke: #fafafa;
 }
 
 .modal-text-box {
