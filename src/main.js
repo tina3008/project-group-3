@@ -12,18 +12,12 @@ import './js/header';
 
 import './js/faq-padd';
 
-<<<<<<< Updated upstream
-=======
 import './js/about-me-accordion';
->>>>>>> Stashed changes
 
 import './js/projects-swiper';
 
 import './js/covers';
 
-<<<<<<< Updated upstream
-=======
 import './js/about-me-accordion.js';
 
 import './js/button-to-top';
->>>>>>> Stashed changes
