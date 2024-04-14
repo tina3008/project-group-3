@@ -18,3 +18,6 @@ import './js/reviews-main';
 import './js/scroll';
 import './js/service-worker'
 
+import './js/about-me-accordion';
+
+import './js/about-me-swiper';
