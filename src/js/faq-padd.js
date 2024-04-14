@@ -1,4 +1,4 @@
-const faqListItems = document.querySelectorAll('.faq-list-item');
+const faqListItems = document.querySelectorAll('.ac');
 
 faqListItems.forEach(function (item, index) {
   if ((index + 1) % 2 === 0) {
