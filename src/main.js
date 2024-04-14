@@ -1,19 +1,12 @@
+import './js/about-me-accordion';
 import './js/api';
-import './js/reviews-main';
-import './js/review-swiper';
-
-import './js/header';
-
-import './js/api';
-
-import './js/faq-accordion';
-
-import './js/header';
-
-import './js/faq-padd';
-
-
-import './js/projects-swiper';
-
 import './js/covers';
-
+import './js/faq-accordion';
+import './js/faq-padd';
+import './js/header';
+import './js/projects-swiper';
+import './js/render-review';
+import './js/review-swiper';
+import './js/reviews-main';
+import './js/scroll';
+import './js/service-worker'
