@@ -90,7 +90,7 @@ img {
   margin-bottom: 12px;
 }
 
-.ac-header {
+.ac .ac-header {
   color: rgba(250, 250, 250, 0.4);
   font-family: Inter Tight;
   font-size: 16px;
@@ -101,7 +101,7 @@ img {
   text-transform: uppercase;
 }
 
-.ac-trigger {
+.ac .ac-trigger {
   width: 36px;
   height: 36px;
   display: flex;
@@ -114,16 +114,12 @@ img {
   background-color: transparent;
 }
 
-.rotate {
-  transform: rotate(180deg);
-}
-
 .icon-about-me {
   width: 18px;
   height: 18px;
 }
 
-.ac-text {
+.ac .ac-panel .ac-text {
   color: rgb(250, 250, 250);
   font-family: Inter Tight;
   font-size: 16px;
@@ -137,6 +133,12 @@ img {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
+}
+
+.ac .ac-panel {
+  overflow: hidden;
+  transition-property: height, visibility;
+  transition-timing-function: ease;
 }
 
 .about-me-accordion-pannel-list {
@@ -183,10 +185,10 @@ img {
   border-radius: 100%;
   z-index: -1;
 }
-/* 
+
 .swipper-and-button-wraper {
-  display: flex;
-} */
+  margin-top: 32px;
+}
 
 .swiper-next-button {
   width: 28px;
@@ -260,7 +262,7 @@ img {
     margin-bottom: 8px;
   }
 
-  .ac-trigger {
+  .ac .ac-trigger {
     width: 40px;
     height: 40px;
     padding: 10px;
@@ -363,4 +365,19 @@ img {
     width: 200px;
     height: 200px;
   }
+}
+
+.ac.js-enabled .ac-panel {
+  visibility: hidden;
+}
+.ac.is-active .ac-panel {
+  visibility: visible;
+}
+
+/* .ac.js-enabled .ac-trigger {
+  transform: rotate(180deg);
+} */
+
+.ac.is-active .icon-about-me {
+  transform: rotate(180deg);
 }
