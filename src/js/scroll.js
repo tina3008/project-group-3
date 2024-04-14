@@ -15,8 +15,10 @@
 
 // scroll
 
-// function smoothScroll(){
-//   document.querySelector('.your_class or #id here').scrollIntoView({
-//       behavior: 'smooth'
-//   });
-// }
+const linkBenefits = document.querySelector('.benefit-footer');
+const footerSection = document.querySelector('#work-together-section');
+
+linkBenefits.addEventListener('click', e=> {
+    e.preventDefault();
+    footerSection.scrollIntoView({behavior: "smooth", block: "center", inline: "start"});
+});
