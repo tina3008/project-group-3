@@ -163,7 +163,7 @@ img {
   position: relative;
 }
 
-.about-me-swiper-slide {
+.swiper-slide-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,6 +182,21 @@ img {
   height: 130px;
   border-radius: 100%;
   z-index: -1;
+}
+/* 
+.swipper-and-button-wraper {
+  display: flex;
+} */
+
+.swiper-next-button {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: transparent; */
+  border-color: transparent;
+  fill: #3b3b3b;
 }
 
 @media screen and (min-width: 768px) {
@@ -266,7 +281,7 @@ img {
     margin-top: 64px;
   }
 
-  .about-me-swiper-slide {
+  .swiper-slide-item {
     width: 200px;
     height: 200px;
   }
@@ -339,7 +354,7 @@ img {
     margin-top: 96px;
   }
 
-  .about-me-swiper-slide {
+  .swiper-slide-item {
     width: 200px;
     height: 200px;
   }
