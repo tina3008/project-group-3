@@ -1,3 +1,9 @@
+.header{
+  margin: 0 auto;
+    position: absolute;
+    width: 100%;
+}
+
 /* ======================================MOBILE HEADER STYLES================================== */
 @media screen and (max-width: 767px ) {
   .menu{
@@ -21,7 +27,6 @@
 .header-button{
   display: none;
 }
-
 .header-img{
   border-radius: 18px;
 width: 80px;
@@ -34,6 +39,7 @@ height: 80px;
   border: none;
   background-color: transparent;
   padding: 0;
+  fill: #fafafa;
 }
 .header-logo{
   display: flex;
@@ -109,7 +115,7 @@ color: #FAFAFA;
   background-color: transparent;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  left: 50%;
+  left: 49%;
   transform: translateX(-50%);
   opacity: 0; 
   transition: opacity 0.2s ease-in-out;
