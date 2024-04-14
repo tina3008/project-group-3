@@ -18,3 +18,5 @@ import './js/projects-swiper';
 import './js/covers';
 
 import './js/about-me-accordion';
+
+import './js/about-me-swiper';
