@@ -129,6 +129,17 @@ img {
   text-align: left;
 }
 
+.ac.js-enabled .ac-panel {
+  visibility: hidden;
+}
+.ac.is-active .ac-panel {
+  visibility: visible;
+}
+
+.ac.is-active .icon-about-me {
+  transform: rotate(180deg);
+}
+
 .about-me-accordion-text-wrapper {
   display: flex;
   flex-direction: column;
@@ -365,19 +376,4 @@ img {
     width: 200px;
     height: 200px;
   }
-}
-
-.ac.js-enabled .ac-panel {
-  visibility: hidden;
-}
-.ac.is-active .ac-panel {
-  visibility: visible;
-}
-
-/* .ac.js-enabled .ac-trigger {
-  transform: rotate(180deg);
-} */
-
-.ac.is-active .icon-about-me {
-  transform: rotate(180deg);
 }
