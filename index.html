@@ -19,32 +19,41 @@
     <script type="module" crossorigin src="/project-group-3/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-group-3/assets/vendor-6ad97744.js">
     <link rel="stylesheet" href="/project-group-3/assets/vendor-119542cd.css">
-    <link rel="stylesheet" href="/project-group-3/assets/index-51564798.css">
+    <link rel="stylesheet" href="/project-group-3/assets/index-689d835c.css">
   </head>
   <body>
-    <div class="menu-container-mobile ">
-  <div class="menu-background-mobile">
-    <button class="header-mobile-menu-close-btn" type="button">
+    <header class="header">
+  <div class="header-container">
+    <div class="header-logo">
+      <a href="./index.html"
+        ><img class="header-img" srcset="/project-group-3/assets/header@2x-82c0f4f8.jpg 2x"
+        src="/project-group-3/assets/header@1x-b59d8685.jpg" alt="logo" />
+      </a>
+      <p class="logo-paragraph">jefferson*</p>
+    </div>
+    <div class="menu" id="profile">
+      <a href="#" class="menu-list" id="profile-link">Menu</a>
+      <div class="menu-dropdown" id="dropdown">
+        <a class="menu-link" href="#about-me">About me</a>
+        <a class="menu-link" href="#benefit-link" id="ben">Benefits</a>
+        <a class="menu-link" href="#projects">Projects</a>
+        <a class="menu-link" href="#faq">FAQ</a>
+      </div>
+    </div>
+    <button class="header-button">Order the project</button>
+    <button class="header-mobile-menu-open-btn" type="button">
       <svg
         class="benefit_icon"
         width="28"
         height="28"
         aria-label="icon Expertise"
       >
-        <use href="/project-group-3/assets/symbol-defs-7b9f6a1c.svg#icon-menu-close"></use>
+        <use href="/project-group-3/assets/symbol-defs-7b9f6a1c.svg#icon-menu-05"></use>
       </svg>
     </button>
-  <div class="menu-mobile" id="profile-mobile">
-    <div class="menu-dropdown-mobile" id="dropdown-mobile">
-      <a class="menu-link-mobile" href="#about-me">About me</a>
-      <a class="menu-link-mobile" href="#benefit-link">Benefits</a>
-      <a class="menu-link-mobile" href="#projects">Projects</a>
-      <a class="menu-link-mobile" href="#faq">FAQ</a>
-    </div>
   </div>
-  <button class="header-button-mobile">Order the project</button>
-</div>
-</div>
+</header>
+
 
     <main>
       <section class="hero" id="hero">
