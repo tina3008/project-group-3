@@ -115,7 +115,7 @@ color: #FAFAFA;
   background-color: transparent;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  left: 49%;
+  left: 50%;
   transform: translateX(-50%);
   opacity: 0; 
   transition: opacity 0.2s ease-in-out;

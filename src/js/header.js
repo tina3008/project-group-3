@@ -14,5 +14,4 @@ document.getElementById("profile-link").addEventListener("click", function(event
     }
   });
 
- 
   
