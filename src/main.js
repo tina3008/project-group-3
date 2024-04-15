@@ -18,4 +18,6 @@ import './js/about-me-accordion';
 
 import './js/about-me-swiper';
 import './js/modal';
-import './js/send-form'
+import './js/send-form';
+import './js/mobail-menu';
+
