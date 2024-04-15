@@ -12,6 +12,7 @@
   overflow: hidden;
 }
 
+
 @media screen and (max-width: 767px) {
   .covers {
     padding-top: 32px;
@@ -32,18 +33,57 @@
     max-width: 375px;
     height: 508px;
     margin: 0 auto;
+    position: relative;
+    overflow: hidden;
   }
 
   @media screen and (min-resolution: 192dpi) and (max-width: 767px),
     screen and (min-resolution: 2dppx) and (max-width: 767px),
     screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-    .covers {
+    .covers-container {
       background-image: linear-gradient(
           to bottom,
           rgba(217, 217, 217, 0.04),
           rgba(217, 217, 217, 0.04)
         ),
         url(../img/covers-img/fon-mob@2x.png);
+    }
+  }
+
+  .image-box {
+    position: absolute;
+    top: -60px;
+  }
+
+  .image-box-string {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 32px;
+    transform: rotate(16deg);
+  }
+
+  .image-box-item {
+    width: 282px;
+    height: 160px;
+    overflow: hidden;
+  }
+
+  .covers-animation {
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes marqueeLine {
+    from {
+      transform: translateX(-60%);
+    }
+
+    to {
+      transform: translateX(-200%);
     }
   }
 }
@@ -68,18 +108,57 @@
     max-width: 768px;
     height: 960px;
     margin: 0 auto;
+    position: relative;
+    overflow: hidden;
   }
 
   @media screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-    .covers {
+    .covers-container {
       background-image: linear-gradient(
           to bottom,
           rgba(217, 217, 217, 0.04),
           rgba(217, 217, 217, 0.04)
         ),
         url(../img/covers-img/fon-tab@2x.png);
+    }
+  }
+
+  .image-box {
+    position: absolute;
+    top: -300px;
+  }
+
+  .image-box-string {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    margin-bottom: 64px;
+    transform: rotate(16deg);
+  }
+
+  .image-box-item {
+    width: 544px;
+    height: 314px;
+    overflow: hidden;
+  }
+
+  .covers-animation {
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes marqueeLine {
+    from {
+      transform: translateX(-60%);
+    }
+
+    to {
+      transform: translateX(-180%);
     }
   }
 }
@@ -109,13 +188,29 @@
   @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
     screen and (min-resolution: 2dppx) and (min-width: 1440px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
-    .covers {
+    .covers-container {
       background-image: linear-gradient(
           to bottom,
           rgba(217, 217, 217, 0.04),
           rgba(217, 217, 217, 0.04)
         ),
         url(../img/covers-img/fon-desc@2x.png);
+    }
+  }
+  
+  .covers-animation {
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  @keyframes marqueeLine {
+    from {
+      transform: translateX(-50%);
+    }
+
+    to {
+      transform: translateX(-180%);
     }
   }
 }
