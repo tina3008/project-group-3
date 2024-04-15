@@ -53,6 +53,7 @@ background-color: transparent;
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
 }
 .heder-footer-link {
   font-weight: 500;
@@ -61,6 +62,7 @@ background-color: transparent;
   letter-spacing: -0.02em;
   padding: 18px 36px 18px 36px;
   display: block;
+  padding: 14px 31px;
 
   border-radius: 60px;
 }
@@ -102,10 +104,11 @@ margin-right: auto;
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  margin-bottom: 289px;
+ 
   margin-top: 302px;
+  margin-bottom: 289px;
+  
 }
-
 
 
 .mobile-menu-navigation{
