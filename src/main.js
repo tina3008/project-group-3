@@ -4,10 +4,6 @@ import './js/covers';
 import './js/faq-accordion';
 import './js/faq-padd';
 
-
-
-
-
 import './js/button-to-top';
 
 import './js/header';
@@ -21,3 +17,4 @@ import './js/service-worker'
 import './js/about-me-accordion';
 
 import './js/about-me-swiper';
+import './js/send-form'
