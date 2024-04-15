@@ -12,8 +12,7 @@
   overflow: hidden;
 }
 
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) {
   .covers {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -197,7 +196,7 @@
         url(../img/covers-img/fon-desc@2x.png);
     }
   }
-  
+
   .covers-animation {
     animation-name: marqueeLine;
     animation-duration: 5s;
