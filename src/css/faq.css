@@ -104,20 +104,22 @@
 
 /* accordion ------------------------- */
 
-.ac {
+.ac.faq-item {
   margin-top: 0px;
-  /* border: 1px solid #eee; */
+  border: 0px solid #1c1d20;
   background-color: #1c1d20;
   box-sizing: border-box;
 }
-.ac .ac-header {
-  margin: 0;
-  padding: 0;
+.ac .ac-header.faq-header {
+  /* margin: 0;
+  padding: 0; */
   color: #fafafa;
   font-size: 20px;
   max-width: 265px;
+  line-height: 1.5;
+  text-transform: none;
 }
-.ac .ac-trigger {
+.ac .ac-trigger.faq-btn {
   /* font: bold 16px 'Arial', sans-serif; */
   cursor: pointer;
   transition: color 0.25s ease;
@@ -133,7 +135,7 @@
   height: 34px;
   background: transparent;
 }
-.ac .ac-trigger::after {
+.ac .ac-trigger.faq-btn::after {
   content: '';
   text-align: center;
   width: 15px;
@@ -144,25 +146,25 @@
   top: 50%;
   display: none;
 }
-.ac .ac-trigger:focus {
+.ac .ac-trigger.faq-btn:focus {
   color: #8a8a8a;
 }
-.ac .ac-panel {
+.ac .ac-panel.faq-panel {
   overflow: hidden;
   transition-property: height, visibility;
   transition-timing-function: ease;
 }
-.ac .ac-panel .ac-text {
+.ac .ac-panel .ac-text.faq-text {
   font-weight: 500;
   font: 16px 'Inter Tight', sans-serif;
   color: rgba(250, 250, 250, 0.6);
   padding: 0px;
   margin: 0;
 }
-.ac.js-enabled .ac-panel {
+.ac.js-enabled .ac-panel.faq-panel {
   visibility: hidden;
 }
-.ac.is-active .ac-panel {
+.ac.is-active .ac-panel.faq-panel {
   visibility: visible;
 }
 .ac.is-active > .ac-header .ac-trigger::after {
@@ -204,11 +206,11 @@
     display: none;
   }
 
-  .ac .ac-panel .ac-text {
+  .ac .ac-panel .ac-text.faq-text {
     max-width: 656px;
   }
 
-  .ac .ac-header {
+  .ac .ac-header.faq-header {
     margin: 0;
     padding: 0;
     color: #fafafa;
@@ -235,7 +237,7 @@
     flex-wrap: wrap;
   }
 
-  .ac {
+  .ac.faq-item {
     max-width: 688px;
 
     position: relative;
@@ -243,7 +245,7 @@
     padding-right: 20px;
   }
 
-  .ac-header {
+  .ac-header.faq-header {
     max-width: 575px;
   }
 
@@ -265,7 +267,7 @@
     padding-left: 20px;
   } */
 
-  .ac:nth-child(2n)::before {
+  .ac.faq-item:nth-child(2n)::before {
     content: '';
     position: absolute;
     left: 0;
