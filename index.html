@@ -19,7 +19,7 @@
     <script type="module" crossorigin src="/project-group-3/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-group-3/assets/vendor-6ad97744.js">
     <link rel="stylesheet" href="/project-group-3/assets/vendor-119542cd.css">
-    <link rel="stylesheet" href="/project-group-3/assets/index-d933e5bc.css">
+    <link rel="stylesheet" href="/project-group-3/assets/index-cb6b49ce.css">
   </head>
   <body>
     <header class="header">
@@ -34,13 +34,22 @@
     <div class="menu" id="profile">
       <a href="#" class="menu-list" id="profile-link">Menu</a>
       <div class="menu-dropdown" id="dropdown">
-        <a class="menu-link" href="#about-me">About me</a>
-        <a class="menu-link" href="#benefit-link" id="ben">Benefits</a>
-        <a class="menu-link" href="#projects">Projects</a>
-        <a class="menu-link" href="#faq">FAQ</a>
+
+        <ul>
+          <li><a class="menu-link-mobile" href="#">About me</a>
+          </li>
+          <li ><a class="menu-link-mobile" href="#benefit-link">Benefits</a>
+          </li>
+          <li><a class="menu-link-mobile" href="#projects">Projects</a>
+          </li>
+          <li><a class="menu-link-mobile" href="#faq">FAQ</a>
+          </li>
+        </ul>
+
+
       </div>
     </div>
-    <button class="header-button">Order the project</button>
+    <button class="header-button"><a href="./footer.html">Order the project</a></button>
     <button class="header-mobile-menu-open-btn" type="button">
       <svg
         class="benefit_icon"
@@ -906,7 +915,8 @@
         </div>
     </div>
 </div>
-    <div class="menu-container-mobile ">
+    
+<div class="menu-container-mobile ">
     <div class="menu-background-mobile">
       <button class="header-mobile-menu-close-btn" type="button">
         <svg
@@ -925,12 +935,19 @@
         <a class="menu-link-mobile" href="#projects">Projects</a>
         <a class="menu-link-mobile" href="#faq">FAQ</a>
       </div>
+
     </div>
     <button class="header-button-mobile">Order the project</button>
   </div>
+
+  <button class="header-button-mobile">Order the project</button>
+</div>
+</div>
+
   </div>
   
-    
+
+
     <button class="scroll-to-top" type="button">
   <svg width="24" height="24" class="icon-up-to-top">
     <use href="/project-group-3/assets/arrow-6d9eeb10.svg#icon-arrow-up"></use>
