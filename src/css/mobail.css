@@ -112,9 +112,9 @@ margin-right: auto;
 margin-bottom: auto;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   .mobail-menu {
-   width: 290px;
+   width: 320px;
   }}
 
   @media screen and (min-width:768px){
