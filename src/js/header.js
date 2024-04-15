@@ -25,21 +25,16 @@ function toggleMenuMobile() {
 
 menuToggleMobile.addEventListener('click', toggleMenuMobile);
 
-// Handle desktop menu toggle (if triggered by profile-link)
 menuToggleDesktop.addEventListener('click', function(event) {
-  event.preventDefault(); // Prevent default link behavior
+  event.preventDefault(); 
 
   const dropdownDesktop = document.getElementById('dropdown'); // Assuming dropdown for desktop menu
 
   if (menuContainerMobile.classList.contains('active')) {
-    // Close mobile menu if open
     menuContainerMobile.classList.remove('active');
   } else {
-    // Open/close desktop menu
     dropdownDesktop.classList.toggle('active');
     dropdownDesktop.style.opacity = dropdownDesktop.classList.contains('active') ? 1 : 0;
-
-    // Optionally, adjust other elements for desktop menu activation (e.g., background color, button styles)
   }
 });
 document.addEventListener('click', function(event) {
