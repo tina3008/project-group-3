@@ -115,14 +115,14 @@ fill:#fafafa;
   color: rgba(250, 250, 250, 0.6);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (width: 320px) {
   .modal {
     width: 343px;
     height: 276px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .modal {
     width: 492px;
     height: 246px;
