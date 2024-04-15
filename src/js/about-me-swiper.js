@@ -4,41 +4,50 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const aboutMeSwiperBox = document.querySelector(".swipper-and-button-wraper > .swiper");
+const aboutMeSwiperBox = document.querySelector('.swiper');
 const aboutMeNextButton = document.querySelector('.swiper-next-button');
 
 const swiper = new Swiper(aboutMeSwiperBox, {
-  modules: [Navigation, Pagination, Keyboard],
-
   modules: [Navigation, Keyboard],
   navigation: {
     nextEl: aboutMeNextButton,
   },
+  loop: true,
   direction: 'horizontal',
-  centeredSlides: true,
   watchOverflow: true,
   keyboard: {
     enabled: true,
     onlyInViewport: true,
     pageUpDown: true,
   },
-    breakpoints: {
-    320: {
-      slidesPerView: 'auto',
-      spaceBetween: 18,
-    },
-    767: {
+
+  breakpoints: {
+    375: {
       slidesPerView: 2,
-      spaceBetween: 16,
     },
-    1280: {
+    768: {
       slidesPerView: 3,
-      spaceBetween: 16,
     },
     1440: {
-      slidesPerView: 4,
-      spaceBetween: 16,
+      slidesPerView: 'auto',
     },
   },
-  slidesPerView: 1,
+});
+swiper.update();
+const firstSlide = document.querySelector('.swiper-slide:first-child');
+
+firstSlide.style.backgroundColor = 'rgb(237, 59, 68)';
+
+swiper.on('slideChangeTransitionStart', () => {
+  const currentIndex = swiper.activeIndex;
+
+  const previousSlide = swiper.slides[currentIndex - 1];
+
+  if (previousSlide) {
+    previousSlide.style.backgroundColor = 'initial';
+  }
+
+  const currentSlide = swiper.slides[currentIndex];
+
+  currentSlide.style.backgroundColor = 'rgb(237, 59, 68)';
 });
