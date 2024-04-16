@@ -50,6 +50,7 @@
 .menu {
   display: none;
 }
+
 /* ======================================MOBILE HEADER STYLES================================== */
 /* 320===========   */
 
@@ -131,7 +132,7 @@
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: #fff;
+    color: #fafafa;
     text-align: center;
     border-radius: 5px;
     transition: 0.2s ease-in-out;
