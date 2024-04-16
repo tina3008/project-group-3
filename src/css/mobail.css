@@ -89,7 +89,6 @@
   background-color: rgb(237, 59, 68);
 }
 
-
 .mobile-list {
   font-weight: 500;
   font-size: 16px;
@@ -106,16 +105,12 @@
   gap: 12px;
 }
 
-
 .mobile-menu-navigation {
   margin: auto;
+}
 
-
-
-  
-.mobile-list:focus{
+.mobile-list:focus {
   color: #e0373f;
-
 }
 
 @media screen and (max-width: 767px) {
