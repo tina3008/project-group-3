@@ -34,7 +34,7 @@
   width: 28px;
   border: none;
   cursor: pointer;
-  z-index: 99999999;
+  z-index: 99998;
   padding: 0;
 }
 .icon-next-button {
@@ -42,6 +42,16 @@
 }
 .on-focused {
   background-color: rgb(237, 59, 68);
+}
+@media screen and (width: 320px) {
+  .swiper-wrapper.list-swiper-abowt {
+    width: 220px;
+    height: 130px;
+  }
+  .swiper-slide.list-item-about {
+    width: 110px;
+    height: 110px;
+  }
 }
 @media screen and (min-width: 767px) {
   .about-me-container-section {

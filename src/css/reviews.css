@@ -149,7 +149,7 @@
   }
 }
 
-@media screen and (width: 1440px) {
+@media screen and (min-width: 1440px) {
   .reviews {
     min-width: 1376px;
     padding: 82px 0;
