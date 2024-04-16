@@ -26,38 +26,36 @@ const swiperProjects = new Swiper(swiperBox, {
   slidesPerView: 1,
 });
 
-
 const nextBtnObserver = new MutationObserver(mutations => {
-    mutations.forEach(mutation => {
-      if (mutation.attributeName === 'class') {
-        const disabled = nextBtn.classList.contains('swiper-button-disabled');
-        if (disabled) {
-            nextBtn.style.opacity = '0.5';
-            nextBtn.style.cursor = 'not-allowed';
-        } else {
-            nextBtn.style.opacity = '1';
-            nextBtn.style.cursor = 'pointer';
-        }
+  mutations.forEach(mutation => {
+    if (mutation.attributeName === 'class') {
+      const disabled = nextBtn.classList.contains('swiper-button-disabled');
+      if (disabled) {
+        nextBtn.style.opacity = '0.5';
+        nextBtn.style.cursor = 'not-allowed';
+      } else {
+        nextBtn.style.opacity = '1';
+        nextBtn.style.cursor = 'pointer';
       }
-    });
+    }
   });
-  
-  nextBtnObserver.observe(nextBtn, { attributes: true });
+});
 
-  
-  const prevBtnObserver = new MutationObserver(mutations => {
-    mutations.forEach(mutation => {
-      if (mutation.attributeName === 'class') {
-        const disabled = prevBtn.classList.contains('swiper-button-disabled');
-        if (disabled) {
-            prevBtn.style.opacity = '0.5';
-            prevBtn.style.cursor = 'not-allowed';
-        } else {
-            prevBtn.style.opacity = '1';
-            prevBtn.style.cursor = 'pointer';
-        }
+nextBtnObserver.observe(nextBtn, { attributes: true });
+
+const prevBtnObserver = new MutationObserver(mutations => {
+  mutations.forEach(mutation => {
+    if (mutation.attributeName === 'class') {
+      const disabled = prevBtn.classList.contains('swiper-button-disabled');
+      if (disabled) {
+        prevBtn.style.opacity = '0.5';
+        prevBtn.style.cursor = 'not-allowed';
+      } else {
+        prevBtn.style.opacity = '1';
+        prevBtn.style.cursor = 'pointer';
       }
-    });
+    }
   });
-  
-  prevBtnObserver.observe(prevBtn, { attributes: true });
+});
+
+prevBtnObserver.observe(prevBtn, { attributes: true });
