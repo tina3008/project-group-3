@@ -22,10 +22,6 @@ const swiper = new Swiper(aboutMeSwiperBox, {
   },
 
   breakpoints: {
-    320: {
-      slidesPerView: 2,
-    },
-
     375: {
       slidesPerView: 2,
     },
