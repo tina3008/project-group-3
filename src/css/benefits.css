@@ -71,7 +71,7 @@
 }
 @media screen and (min-width: 320px) {
   .benefit_section {
-    width: 300px;
+    max-width: 300px;
   }
 
   .benefit_card {
@@ -82,7 +82,7 @@
 /* 768 tablet============   */
 @media screen and (min-width: 767px) {
   .benefit_section {
-    width: 704px;
+    max-width: 704px;
   }
   .benefits {
     display: flex;
@@ -99,7 +99,7 @@
 /* 1440==========   */
 @media screen and (min-width: 1440px) {
   .benefit_section {
-    width: 1376px;
+    max-width: 1376px;
     display: flex;
   }
   .benefit_main_head {

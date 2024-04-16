@@ -1,35 +1,22 @@
 .header {
   position: absolute;
-  left: 50%;
+
+   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, 0);   
+
+  margin: 32px auto;    
+    width: 100%;
 }
 .header-container {
-  display: flex;
+  display: flex; 
   justify-content: space-between;
-  padding: 32px 0;
-}
-/* ======================================MOBILE HEADER STYLES================================== */
-/* 320===========   */
-@media screen and (max-width: 375px) {
-  .header {
-    width: 320px;
-  }
+padding: 32px 0;
 }
 
-
-@media screen and (max-width: 767px ) {
-  .header {
-    width: 704px;
-    padding: 32px 0;
-  }
-  .menu{
-    display: none;
-  }
-}
 
 .menu-link{
-    
+    font-family: 'Inter Tight', sans-serif;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: -0.02em;
@@ -60,13 +47,34 @@ height: 80px;
 .logo-paragraph{
   padding-left: 8px;
 }
-/* ======================================MOBILE HEADER STYLES================================== */
-/* ======================================TABLET HEADER STYLES================================== */
-@media screen and (min-width: 768px) {
-  .header-container {
-    padding: 24px 32px;
-    
+
+.menu{
+  display: none;
 }
+/* ======================================MOBILE HEADER STYLES================================== */
+/* 320===========   */
+
+@media screen and (max-width: 375px) {
+  .header {
+    width: 320px;
+
+  
+  }
+
+}
+
+/* ======================================TABLET HEADER STYLES================================== */
+@media screen and (min-width: 768px ) {
+  .header {
+    max-width: 704px;
+  
+    justify-content: space-between;
+  }
+  .menu{
+    display: flex;
+  }
+
+
 .header-mobile-menu-open-btn{
   display: none;
 }
@@ -82,7 +90,7 @@ height: 80px;
 width: 60px;
 height: 39px;
 }
-.header-orders{
+.header-orders-main{
   width: 163px;
   height: 55px;
 background-color: #ED3B44;
@@ -149,8 +157,9 @@ background-color: #ED3B44;
 }
 @media screen and (min-width: 1440px) {
   .header {
-    width: 1376px;
-    padding: 32px 0;
+   max-width: 1376px;
+
+
   }
 }
 /* ======================================TABLET HEADER STYLES================================== */
