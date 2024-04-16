@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import { Navigation, Keyboard, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-const swiperContainer = document.querySelector('.swiper-one');
+const swiperContainer = document.querySelector('.swiper.swiper-one');
 export const BUTTON_NEXT = document.querySelector('.button-next-svg');
 export const BUTTON_PREV = document.querySelector('.button-prev');
 

@@ -35,6 +35,7 @@
   border: none;
   cursor: pointer;
   z-index: 99999999;
+  padding: 0;
 }
 .icon-next-button {
   stroke: rgb(59, 59, 59);
