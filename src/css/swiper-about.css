@@ -34,7 +34,7 @@
   width: 28px;
   border: none;
   cursor: pointer;
-  z-index: 99999999;
+  z-index: 99998;
   padding: 0;
 }
 .icon-next-button {
