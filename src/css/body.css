@@ -10,6 +10,10 @@ body {
   background: #1c1d20;
   color: #fafafa;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  /* scroll-behavior: smooth; */
 }
 .visually-hidden {
   position: absolute;
@@ -30,30 +34,4 @@ is-open {
   display: flex;
 }
 
-a {
-  text-decoration: none;
-}
 
-ul {
-  list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-  object-fit: cover;
-}
