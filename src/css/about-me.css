@@ -134,7 +134,7 @@ img {
 }
 
 .ac .ac-trigger.ac-trigger-about-me:focus {
-  color: transparent;
+  fill: #fff;
 }
 
 .ac.is-active > .ac-header .ac-trigger.ac-trigger-about-me::after {
