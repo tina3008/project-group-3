@@ -1,7 +1,5 @@
 import Accordion from 'accordion-js';
-
-const accordionButtonTrigger = document.querySelector(".ac-trigger")
-
+import 'accordion-js/dist/accordion.min.css';
 
 new Accordion(".accordion-container", {
   duration: 600,
