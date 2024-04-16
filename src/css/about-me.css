@@ -13,12 +13,16 @@
 }
 
 .about-me-section {
+  max-width: 375px;
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
-  display: flex;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-me-container-section {
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .about-me-description {
@@ -81,10 +85,14 @@ img {
 
 .ac.ac-about-me {
   margin-top: 0;
+  min-width: 343px;
   border: none;
   background-color: transparent;
   box-sizing: border-box;
-  padding: 0;
+}
+
+.ac.ac-about-me:nth-child(2n) {
+  padding-right: 0;
 }
 
 .about-me-item-caption-and-button-wrapper {
@@ -227,6 +235,7 @@ img {
   }
 
   .about-me-section {
+    min-width: 704px;
     padding-top: 41px;
     padding-bottom: 48px;
   }
@@ -314,6 +323,7 @@ img {
 
 @media screen and (min-width: 1440px) {
   .about-me-section {
+    max-width: 1376px;
     padding-top: 48px;
     padding-bottom: 82px;
   }
@@ -357,17 +367,22 @@ img {
 
   .about-me-item-caption-and-button-wrapper {
     max-width: 1376px;
-    min-width: 1376px;
+    /* min-width: 1312px; */
   }
 
   .ac-panel {
-    margin-left: 696px;
+    margin-left: 632px;
+    margin-right: 68px;
   }
 
   .line-between-accordion-item {
     margin-top: 32px;
     max-width: 1376px;
     border: 1px solid rgba(250, 250, 250, 0.2);
+  }
+
+  .ac.ac-about-me {
+    min-width: 1312px;
   }
 
   .about-me-swiper {
