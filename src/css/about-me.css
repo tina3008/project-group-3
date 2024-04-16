@@ -152,13 +152,10 @@ img {
 }
 
 .ac .ac-panel .ac-text.ac-text-about-me {
+  font: 500 16px / 1.5 Inter Tight, sans-serif;
   color: rgb(250, 250, 250);
-  font-family: Inter Tight;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
   letter-spacing: -0.02em;
-  text-align: left;
+  text-align: start;
   padding: 0;
 }
 
