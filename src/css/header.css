@@ -6,6 +6,7 @@
   transform: translate(-50%, 0);
 
   margin: 32px auto;
+ 
   width: 100%;
 }
 .header-container {
@@ -31,7 +32,7 @@
   height: 80px;
 }
 .header-mobile-menu-open-btn {
-  stroke: #1b414b;
+  /* stroke: #1b414b; */
   display: flex;
   line-height: 0;
   border: none;
@@ -117,11 +118,13 @@
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
+    padding-top: 50px;
   }
 
   .menu.active .menu-dropdown {
     display: block;
     opacity: 1;
+    
   }
 
   .menu-dropdown a {
@@ -135,13 +138,13 @@
   }
 
   .menu-dropdown a:hover {
-    background-color: #f4f4f4;
+ 
     transform: scale(1.1);
     color: #e0373f;
   }
 
   .menu-dropdown a:focus {
-    background-color: #f4f4f4;
+   
     transform: scale(1.1);
     color: #e0373f;
   }
