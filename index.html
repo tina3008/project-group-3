@@ -19,7 +19,7 @@
     <script type="module" crossorigin src="/project-group-3/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-group-3/assets/vendor-c0604851.js">
     <link rel="stylesheet" href="/project-group-3/assets/vendor-36b7a267.css">
-    <link rel="stylesheet" href="/project-group-3/assets/index-78d788f0.css">
+    <link rel="stylesheet" href="/project-group-3/assets/index-f1b3482f.css">
   </head>
   <body>
     <header class="header">
@@ -53,9 +53,12 @@
         >Order the project</a
       >
     </div>
-    <button class="button-burger" id="burger-menu">
+
+    <button class="header-mobile-menu-open-btn" type="button" id="burger">
       <svg
         class="burger_icon"
+
+    
         width="28"
         height="28"
         aria-label="icon Expertise"
@@ -950,11 +953,21 @@
   </div>
   </div> -->
 
-
 <!-- ++++++++++++++++++++++++++++++++++ -->
 
 <div class="mobail-menu" id="mobail-menu">
   <div class="mobail-content">
+    <button class="mobile-menu-close-btn" id="mobiail-btn" type="button">
+      <svg
+        class="icon-closed"
+        width="28"
+        height="28"
+        aria-label="close modal icon"
+      >
+        <use href="/project-group-3/assets/symbol-defs-7b9f6a1c.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+
     <nav class="mobile-menu-navigation">
       <ul class="mobile-list">
         <li class="mobile-menu-item menu-link-add-color">
@@ -978,6 +991,7 @@
     </div>
   </div>
 </div>
+
     <button class="scroll-to-top" type="button">
   <svg width="24" height="24" class="icon-up-to-top">
     <use href="/project-group-3/assets/arrow-6d9eeb10.svg#icon-arrow-up"></use>
