@@ -15,13 +15,13 @@
 @media screen and (min-width: 320px) {
   .reviews-list-items.swiper-slide {
     padding: 22px 12px;
-    min-width: 300px;
+    width: 300px;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 20px;
   }
   .container-wrapper {
     padding: 0 8px;
-    min-width: 300px;
+    min-width: 304px;
     min-width: 0;
   }
   .reviews {
@@ -118,12 +118,13 @@
 }
 @media screen and (min-width: 375px) {
   .reviews {
-    min-width: 375px;
+    width: 375px;
   }
 
   .container-wrapper {
     padding: 0 16px;
-    min-width: 344px;
+    width: 375px;
+    margin: 0 auto;
   }
   .reviews-list-items.swiper-slide {
     padding: 32px 24px;
@@ -136,24 +137,24 @@
 
 @media screen and (min-width: 767px) {
   .reviews {
-    min-width: 768px;
+    width: 768px;
     padding: 48px 0;
   }
 
   .container-wrapper {
     padding: 0 32px;
-    min-width: 704px;
+    width: 704px;
   }
 }
 /* *============== DESKTOP================== */
 
 @media screen and (min-width: 1440px) {
   .reviews {
-    min-width: 1440px;
+    width: 1440px;
     padding: 82px 0;
   }
   .container-wrapper {
     padding: 0 32px;
-    min-width: 1376px;
+    width: 1376px;
   }
 }
