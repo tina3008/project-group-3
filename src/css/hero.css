@@ -26,7 +26,6 @@
   text-align: left;
   text-transform: uppercase;
   letter-spacing: -0.03em;
- 
 }
 
 .hero-top-menu {
@@ -36,7 +35,6 @@
   margin-bottom: 32px;
   margin-left: auto;
   margin-right: 0;
- 
 }
 
 .hero-menu-item {
@@ -44,7 +42,7 @@
   font-family: Inter Tight;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1,2;
+  line-height: 1, 2;
   text-align: left;
   letter-spacing: -0.02em;
   position: static;
@@ -58,7 +56,6 @@
   padding: 10px;
 }
 
-
 /* ============== TABLET HERO STYLES ============== */
 
 @media screen and (min-width: 768px) {
@@ -71,7 +68,7 @@
   }
 
   .hero-cower {
-    max-width: 704px; 
+    max-width: 704px;
   }
   .hero-title {
     font-size: 90px;
@@ -93,23 +90,17 @@
   .hero-menu-item {
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.18;   
+    line-height: 1.18;
     padding: 18px;
   }
- 
 }
 /* ============== DESKTOP HERO STYLES ============== */
 @media screen and (min-width: 1440px) {
   .hero {
     width: 100%;
-   
-
   }
   .hero-cower {
     max-width: 1376px;
-    margin-left: auto;
-    margin-right: auto;  
-    padding: 0;  
   }
   .hero-title {
     width: 1084px;
@@ -120,7 +111,6 @@
   }
 
   .hero-top-menu {
-    max-width: 1376px;
-    
+  
   }
 }
