@@ -11,22 +11,39 @@ new Accordion('.faq-list-accordion-container', {
 
 document.addEventListener('click', function (event) {
   const clickedButton = event.target.closest('.ac-trigger');
+
   if (!clickedButton) return;
+
   event.preventDefault();
 
   const clickedLi = clickedButton.closest('.ac');
   const svgUse = clickedButton.querySelector('use');
-  const svgHref = svgUse.getAttribute('href');
 
   if (clickedLi.classList.contains('is-active')) {
-    svgUse.setAttribute(
-      'href',
-      svgHref.replace('#icon-arrow-down', '#icon-arrow-up')
-    );
+    svgUse.setAttribute('href', arrowUpIcon);
   } else {
-    svgUse.setAttribute(
-      'href',
-      svgHref.replace('#icon-arrow-up', '#icon-arrow-down')
-    );
+    svgUse.setAttribute('href', arrowDownIcon);
   }
 });
+
+// document.addEventListener('click', function (event) {
+//   const clickedButton = event.target.closest('.ac-trigger');
+//   if (!clickedButton) return;
+//   event.preventDefault();
+
+//   const clickedLi = clickedButton.closest('.ac');
+//   const svgUse = clickedButton.querySelector('use');
+//   const svgHref = svgUse.getAttribute('href');
+
+//   if (clickedLi.classList.contains('is-active')) {
+//     svgUse.setAttribute(
+//       'href',
+//       svgHref.replace('#icon-arrow-down', '#icon-arrow-up')
+//     );
+//   } else {
+//     svgUse.setAttribute(
+//       'href',
+//       svgHref.replace('#icon-arrow-up', '#icon-arrow-down')
+//     );
+//   }
+// });
