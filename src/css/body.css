@@ -10,8 +10,8 @@ body {
   background: #1c1d20;
   color: #fafafa;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
+  /* scroll-behavior: smooth; */
 }
 .visually-hidden {
   position: absolute;
