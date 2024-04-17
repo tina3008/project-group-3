@@ -1,18 +1,49 @@
-document.getElementById("profile-link").addEventListener("click", function(event) {
+document.addEventListener("DOMContentLoaded", function() {
+  const profileLink = document.getElementById("profile-link");
+  const dropdown = document.getElementById("dropdown");
+  const menuLinks = document.querySelectorAll(".menu-link-mobile");
+
+  profileLink.addEventListener("click", function(event) {
     event.preventDefault();
-    document.getElementById("profile").classList.toggle("active");
-  
-    const dropdown = document.getElementById("dropdown");
-    if (dropdown.classList.contains("active")) {
-      dropdown.classList.remove("active");
-      dropdown.style.opacity = 0;
-    } else {
-      dropdown.classList.add("active");
-      setTimeout(() => {
-        dropdown.style.opacity = 1;
-      }, 10); 
+    toggleMenu();
+  });
+
+  menuLinks.forEach(function(link) {
+    link.addEventListener("click", function(event) {
+      hideMenu();
+    });
+  });
+  dropdown.addEventListener("click", function(event) {
+    hideMenu();
+  });
+  document.addEventListener("click", function(event) {
+    const target = event.target;
+    if (!dropdown.contains(target) && !profileLink.contains(target)) {
+      hideMenu();
     }
   });
+});
+
+function toggleMenu() {
+  const profile = document.getElementById("profile");
+  const dropdown = document.getElementById("dropdown");
+  profile.classList.toggle("active");
+  dropdown.classList.toggle("active");
+  if (dropdown.classList.contains("active")) {
+    dropdown.style.opacity = 1;
+  } else {
+    dropdown.style.opacity = 0;
+  }
+}
+
+function hideMenu() {
+  const profile = document.getElementById("profile");
+  const dropdown = document.getElementById("dropdown");
+  profile.classList.remove("active");
+  dropdown.classList.remove("active");
+  dropdown.style.opacity = 0;
+}
+
 
   const menuToggleMobile = document.querySelector('.header-mobile-menu-open-btn');
 const menuToggleDesktop = document.getElementById('profile-link'); // Assuming this triggers desktop menu
