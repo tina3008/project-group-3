@@ -7,7 +7,6 @@ const swiperBox = document.querySelector('.projects-section > .swiper');
 export const nextBtn = document.querySelector('.next-btn');
 export const prevBtn = document.querySelector('.prev-btn');
 
-console.log(swiperBox);
 
 const swiperProjects = new Swiper(swiperBox, {
   modules: [Navigation, Keyboard],
