@@ -16,13 +16,11 @@
   display: flex;
 }
 
-
 .footer-image {
   position: absolute;
   width: 44px;
   height: 44px;
 }
-
 
 .footer-title {
   font-family: 'Inter Tight', sans-serif;
@@ -66,6 +64,9 @@
   height: 44px;
   color: #fafafa;
   transition: border-color 250ms linear;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .footer-input::placeholder {
@@ -75,6 +76,23 @@
 .footer-input:focus {
   border-color: rgba(250, 250, 250, 0.5);
 }
+
+.validation-text {
+  display: block;
+  font-family: Inter Tight;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -2%;
+}
+
+/* .footer-email:valid {
+  border-bottom-color: rgb(60, 188, 129);
+}
+
+.footer-input:invalid {
+  border-bottom-color: rgb(231, 74, 59);
+} */
 
 .footer-button {
   font-family: 'Inter Tight', sans-serif;
@@ -123,6 +141,26 @@
   border-color: #fafafa;
 }
 
+.footer-telephone {
+  font-size: 12px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+@media screen and (min-width: 375px) {
+  .footer-telephone {
+    font-size: 14px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer-section {
     margin-top: 48px;
@@ -136,11 +174,9 @@
     padding-top: 80px;
   }
 
- work-together-branch
   .footer-image {
     width: 70px;
     height: 70px;
-
   }
 
   .footer-title {
@@ -193,6 +229,10 @@
     max-width: 1440px;
     padding-left: 196px;
     padding-right: 196px;
+  }
+
+  .footer-title {
+    width: 542px;
   }
 
   .footer-input {

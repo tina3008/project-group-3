@@ -36,17 +36,20 @@
       </h2>
     </div>
     <form class="footer-form" id="footer-form">
-      <label for="user-email">
-        <input
-          class="footer-input email"
-          id="user-email"
-          name="user-email"
-          type="email"
-          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-          placeholder="clients@gmail.com"
-          required
-        />
-      </label>
+      <div class="footer-input-box">
+        <label for="user-email">
+          <input
+            class="footer-input footer-email"
+            id="user-email"
+            name="user-email"
+            type="email"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            placeholder="clients@gmail.com"
+            required
+          />
+        </label>
+        <span class="validation-text"></span>
+      </div>
       <label for="user-comment">
         <input
           class="footer-input"
@@ -63,7 +66,9 @@
       <a class="footer-contacts-data" href="mailto:lloydjefferson@gmail.com"
         >lloydjefferson@gmail.com</a
       >
-      <a class="footer-contacts-data" href="tel:+380 11 1111 11 11"
+      <a
+        class="footer-contacts-data footer-telephone"
+        href="tel:+380 11 1111 11 11"
         >+380 11 1111 11 11</a
       >
     </div>

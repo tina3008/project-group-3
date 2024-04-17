@@ -5,7 +5,6 @@ const userEmailField = document.querySelector('#user-email');
 function clearFormFields() {
   const fieldName = form.querySelector('input[type="text"]');
   const fieldEmail = form.querySelector('input[type="email"]');
- 
 
   fieldName.value = '';
   fieldEmail.value = '';
@@ -22,7 +21,6 @@ form.addEventListener('submit', e => {
 
   form.reset();
 
-  const modalOpen= document.querySelector('#modal-open')
+  const modalOpen = document.querySelector('#modal-open')
   modalOpen.classList.add("is-open");
-  
 });
