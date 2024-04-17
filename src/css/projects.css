@@ -123,11 +123,17 @@
     stroke: #fafafa;
 }
 
+@media screen and (width: 320px) {
+    .projects-section{
+        width: 300px;
+    }
+}
+
 /* ===TABLET STYLES=== */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
     .projects-section {
-        max-width: 768px;
-        padding: 48px 32px;
+        max-width: 704px;
+        padding: 48px 0px;
     }
 
     .projects-item {
@@ -170,8 +176,8 @@
 
 @media screen and (min-width: 1440px) {
     .projects-section {
-        max-width: 1440px;
-        padding: 82px 32px;
+        max-width: 1376px;
+        padding: 82px 0px;
     }
 
     .projects-item {

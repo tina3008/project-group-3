@@ -1,14 +1,15 @@
-const coversSection = document.querySelector('.covers');
+const coversContainer = document.querySelector('.covers-container');
 
 const observer = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
+      const imageBoxItems = entry.target.querySelectorAll('.image-box-item');
       if (entry.isIntersecting) {
-        entry.target.querySelectorAll('.image-box-item').forEach(item => {
+        imageBoxItems.forEach(item => {
           item.classList.add('covers-animation');
         });
       } else {
-        entry.target.querySelectorAll('.image-box-item').forEach(item => {
+        imageBoxItems.forEach(item => {
           item.classList.remove('covers-animation');
         });
       }
@@ -19,4 +20,4 @@ const observer = new IntersectionObserver(
   }
 );
 
-observer.observe(coversSection);
+observer.observe(coversContainer);
