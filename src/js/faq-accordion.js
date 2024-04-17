@@ -1,8 +1,8 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-import arrowDownIcon from '../img/sprite.svg#icon-arrow-down';
-import arrowUpIcon from '../img/sprite.svg#icon-arrow-up';
+import arrowDownIcon from '../img/sprite.svg#icon-btn-dwn';
+import arrowUpIcon from '../img/sprite.svg#icon-btn-up';
 
 new Accordion('.faq-list-accordion-container', {
   duration: 600,
