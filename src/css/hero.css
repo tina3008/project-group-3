@@ -1,9 +1,5 @@
 .hero {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-left: 16px;
-  padding-right: 16px;
   background: url(../img/hero-img/hero-mobile-background.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -14,12 +10,14 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .hero-title {
   display: block;
   margin-top: 279px;
   margin-bottom: 214px;
-  width: 343px;
+  /* max-width: 343px; */
   color: rgb(250, 250, 250);
   font-family: Inter Tight;
   font-size: 50px;
@@ -35,6 +33,9 @@
   justify-content: flex-end;
   gap: 4px;
   margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: 0;
+  width: 342px;
 }
 
 .hero-menu-item {
@@ -44,36 +45,49 @@
   font-weight: 400;
   line-height: 1, 2;
   text-align: left;
-
+  letter-spacing: -0.02em;
   position: static;
-  width: 37px;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
   box-sizing: border-box;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 37px;
 }
 
 .hero-menu-item-email {
   width: 160px;
+}
+/* +++++++++++++320px++++++++++++++++++ */
+
+@media screen and (width: 320px) {
+  .hero-cower {
+    padding: 0px 10px;
+    width: 300px;
+  }
+  .hero-top-menu {
+    width: 300px;    
+  }
 }
 /* ============== TABLET HERO STYLES ============== */
 
 @media screen and (min-width: 768px) {
   .hero {
     min-width: 704px;
-    padding-left: 32px;
-    padding-right: 32px;
     background: url(../img/hero-img/hero-backgroun.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
+  .hero-cower {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
   .hero-title {
     font-size: 90px;
     font-weight: 400;
@@ -87,7 +101,10 @@
   .hero-top-menu {
     justify-content: flex-end;
     gap: 8px;
-    padding-right: 10px;
+    width: 483px;
+    margin-bottom: 32px;
+    margin-right: 0;
+    margin-left: auto;
   }
 
   .hero-menu-item {
@@ -95,6 +112,7 @@
     font-weight: 400;
     line-height: 1.18;
     width: 56px;
+    padding: 18px;
   }
   .hero-menu-item-email {
     width: 200px;
@@ -107,7 +125,6 @@
   }
   .hero-cower {
     max-width: 1376px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
   }
