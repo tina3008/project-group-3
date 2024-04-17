@@ -33,10 +33,6 @@ export const swiper = new Swiper(swiperContainer, {
       slidesPerView: 2,
       spaceBetween: 16,
     },
-    1280: {
-      slidesPerView: 3,
-      spaceBetween: 16,
-    },
     1440: {
       slidesPerView: 4,
       spaceBetween: 16,
