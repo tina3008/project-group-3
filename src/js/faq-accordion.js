@@ -9,22 +9,22 @@ new Accordion('.faq-list-accordion-container', {
   showMultiple: true,
 });
 
-document.addEventListener('click', function (event) {
-  const clickedButton = event.target.closest('.ac-trigger');
+// document.addEventListener('click', function (event) {
+//   const clickedButton = event.target.closest('.ac-trigger');
 
-  if (!clickedButton) return;
+//   if (!clickedButton) return;
 
-  event.preventDefault();
+//   event.preventDefault();
 
-  const clickedLi = clickedButton.closest('.ac');
-  const svgUse = clickedButton.querySelector('use');
+//   const clickedLi = clickedButton.closest('.ac');
+//   const svgUse = clickedButton.querySelector('use');
 
-  if (clickedLi.classList.contains('is-active')) {
-    svgUse.setAttribute('href', arrowUpIcon);
-  } else {
-    svgUse.setAttribute('href', arrowDownIcon);
-  }
-});
+//   if (clickedLi.classList.contains('is-active')) {
+//     svgUse.setAttribute('href', arrowUpIcon);
+//   } else {
+//     svgUse.setAttribute('href', arrowDownIcon);
+//   }
+// });
 
 // document.addEventListener('click', function (event) {
 //   const clickedButton = event.target.closest('.ac-trigger');
