@@ -54,8 +54,7 @@
 /* 320===========   */
 @media screen and (width: 320px) {
   .header {
-    width: 300px;   
-    padding: 0 10px;
+    width: 300px; 
 
   }  
 }
