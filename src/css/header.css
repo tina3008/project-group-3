@@ -3,51 +3,6 @@
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, 0);
-  width: 100%;
-}
-.header-container {
- margin-top: 32px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 16px;
-}
-.menu-link {
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: -0.02em;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  color: var(--main-text);
-}
-.header-button {
-  display: none;
-}
-.header-img {
-  border-radius: 18px;
-  width: 80px;
-  height: 80px;
-}
-.header-mobile-menu-open-btn {
-  /* stroke: #1b414b; */
-  display: flex;
-  line-height: 0;
-  border: none;
-  background-color: transparent;
-  padding: 0;
-  fill: #fafafa;
-}
-.header-logo {
-  display: flex;
-}
-.logo-paragraph {
-  padding-left: 8px;
-}
-
-.menu {
-  display: none;
-}
-
 
   width: 100%;
 }
