@@ -36,7 +36,7 @@
   margin-bottom: 32px;
   margin-left: auto;
   margin-right: 0;
-  /* width: 342px; */
+ 
 }
 
 .hero-menu-item {
@@ -58,18 +58,7 @@
   padding: 10px;
 }
 
-/* +++++++++++++320px++++++++++++++++++ */
 
-@media screen and (width: 320px) {
-  .hero-cower {
-    padding: 0px 10px;
-    width: 300px;
-  }
-  .hero-top-menu {
-    margin-left: auto;
-    margin-right: 0 ;
-  }
-}
 /* ============== TABLET HERO STYLES ============== */
 
 @media screen and (min-width: 768px) {
@@ -82,7 +71,7 @@
   }
 
   .hero-cower {
-    min-width: 704px; 
+    max-width: 704px; 
   }
   .hero-title {
     font-size: 90px;
@@ -113,11 +102,14 @@
 @media screen and (min-width: 1440px) {
   .hero {
     width: 100%;
+   
+
   }
   .hero-cower {
     max-width: 1376px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;  
+    padding: 0;  
   }
   .hero-title {
     width: 1084px;
@@ -125,5 +117,10 @@
     margin-right: auto;
     margin-top: 300px;
     margin-bottom: 243px;
+  }
+
+  .hero-top-menu {
+    max-width: 1376px;
+    
   }
 }
