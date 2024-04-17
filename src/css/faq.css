@@ -3,6 +3,29 @@
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.ac .ac-trigger.faq-btn::after {
+  content: '';
+  text-align: center;
+  width: 15px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  display: none;
+}
+
+.ac .ac-trigger.faq-btn::after {
+  content: '';
+  text-align: center;
+  width: 15px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  display: none;
+}
 
 .faq-container {
   font-family: 'Inter Tight', sans-serif;
@@ -34,7 +57,6 @@
 .faq-list-accordion-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 343px;
 }
 
@@ -81,7 +103,6 @@
   stroke-width: 1px;
   stroke: rgba(250, 250, 250, 0.2);
   margin: 20px 0;
-
   border: 1px solid rgba(250, 250, 250, 0.2);
 }
 
@@ -89,18 +110,22 @@
   display: none;
 }
 
-.ac:nth-child(even) {
-  padding-right: 20px;
+.ac.faq-item::before {
+  content: '';
+  width: 688px;
+  height: 1px;
+  background-color: rgba(250, 250, 250, 0.2);
+  display: block;
+  margin-bottom: 32px;
 }
-
-/* accordion ------------------------- */
 
 .ac.faq-item {
   margin-top: 0px;
-  border: 0px solid #1c1d20;
-  background-color: #1c1d20;
+  border: none;
+  background-color: transparent;
   box-sizing: border-box;
 }
+
 .ac .ac-header.faq-header {
   color: #fafafa;
   font-size: 20px;
@@ -108,6 +133,7 @@
   line-height: 1.5;
   text-transform: none;
 }
+
 .ac .ac-trigger.faq-btn {
   cursor: pointer;
   transition: color 0.25s ease;
@@ -123,25 +149,11 @@
   height: 34px;
   background: transparent;
 }
-.ac .ac-trigger.faq-btn::after {
-  content: '';
-  text-align: center;
-  width: 15px;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  display: none;
-}
+
 .ac .ac-trigger.faq-btn:focus {
   color: #8a8a8a;
 }
-.ac .ac-panel.faq-panel {
-  overflow: hidden;
-  transition-property: height, visibility;
-  transition-timing-function: ease;
-}
+
 .ac .ac-panel .ac-text.faq-text {
   font-weight: 500;
   font: 16px 'Inter Tight', sans-serif;
@@ -149,14 +161,17 @@
   padding: 0px;
   margin: 0;
 }
-.ac.js-enabled .ac-panel.faq-panel {
-  visibility: hidden;
-}
-.ac.is-active .ac-panel.faq-panel {
-  visibility: visible;
-}
+
 .ac.is-active > .ac-header .ac-trigger::after {
   content: '';
+}
+.ac.faq-item::before {
+  content: '';
+  width: 344px;
+  height: 1px;
+  background-color: rgba(250, 250, 250, 0.2);
+  display: block;
+  margin-bottom: 32px;
 }
 
 @media screen and (min-width: 768px) {
@@ -172,14 +187,17 @@
   .faq-list-accordion-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 704px;
   }
 
   .faq-content {
     gap: 26px;
   }
-
+  .l-item::after {
+    content: '';
+    display: block;
+    background-color: rgba(250, 250, 250, 20%);
+  }
   .faq-bar-svg {
     margin-top: 24px;
     margin-bottom: 32px;
@@ -201,6 +219,14 @@
     font-size: 20px;
     max-width: 575px;
   }
+  .ac.faq-item::before {
+    content: '';
+    width: 704px;
+    height: 1px;
+    background-color: rgba(250, 250, 250, 0.2);
+    display: block;
+    margin-bottom: 32px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -215,18 +241,22 @@
 
   .faq-list-accordion-container {
     display: flex;
-    align-items: center;
     width: 1376px;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
+  .faq-list-accordion-container::after,
+  .faq-list-accordion-container::before {
+    content: '';
+    display: block;
+    background-color: rgba(250, 250, 250, 20%);
+    width: 1376px;
+    height: 1px;
+  }
+
   .ac.faq-item {
     max-width: 688px;
-
-    position: relative;
-
-    padding-right: 20px;
   }
 
   .ac-header.faq-header {
@@ -236,57 +266,19 @@
   .faq-bar-svg {
     margin-top: 25px;
     margin-bottom: 35px;
-    width: 708px;
     width: 688px;
   }
 
-  /*------------------------------------------*/
-
-  /* .faq-list-item:nth-child(even) {
-    padding-left: 20px;
-  } */
-
-  .ac.faq-item:nth-child(2n)::before {
+  .s-item::before {
     content: '';
-    position: absolute;
-    left: 0;
-    /* top: 50%; */
-    /* transform: translateY(-50%); */
-    width: 2px;
-    /* height: 100%; */
-    background-color: rgba(250, 250, 250, 0.2);
-    z-index: -1;
-
-    transform: translateY(-20%);
-    height: 160px;
+    display: block;
+    width: 688px;
+    height: 1px;
+    background-color: #fafafa;
   }
-
-  .ac.faq-item.is-active:nth-child(2n)::before {
-    content: '';
-    position: absolute;
-    left: 0;
-
-    width: 2px;
-
-    background-color: rgba(250, 250, 250, 0.2);
-    z-index: -1;
-
-    transform: translateY(-10%);
-    height: 205px;
-  }
-
-  /*======================*/
-
-  .s-item {
-    padding-top: 66px;
-    padding-top: 21px;
-  }
-
-  /* .ac.is-active .s-item {
-  } */
 
   .l-item {
-    padding-bottom: 40px;
+    padding-bottom: 32px;
   }
 
   .f-bar {
@@ -303,42 +295,39 @@
   }
 
   .last-bar {
-    margin-bottom: 78px;
-    border: 1px solid #1c1d20;
+    display: none;
   }
 
   .l-bar {
     width: 1376px;
   }
 
-  /*======================*/
-
-  .ac .ac-panel.faq-panel {
-    overflow: hidden;
-    transition-property: height, visibility;
-    transition-timing-function: ease;
-    max-width: 656px;
-  }
   .ac .ac-panel .ac-text.faq-text {
     font-weight: 500;
     font: 16px 'Inter Tight', sans-serif;
     color: rgba(250, 250, 250, 0.6);
     padding: 0px;
     margin: 0;
-
+    height: 72px;
     max-width: 656px;
-  }
-  .ac.js-enabled .ac-panel.faq-panel {
-    visibility: hidden;
-  }
-  .ac.is-active .ac-panel.faq-panel {
-    visibility: visible;
   }
 
   .ac.ac.is-active .ac-panel.faq-panel {
     max-width: 656px;
     margin: 0;
   }
-}
 
-/*---------------*/
+  .ac .ac-trigger.faq-btn {
+    margin-right: 20px;
+  }
+
+  .ac.faq-item:nth-child(even) {
+    border-left: 1px solid rgba(250, 250, 250, 0.2);
+  }
+  .ac.faq-item:nth-child(even) .ac-panel.faq-panel {
+    padding-left: 32px;
+  }
+  .ac.faq-item:nth-child(even) .faq-content-div-accordion {
+    padding-left: 32px;
+  }
+}
