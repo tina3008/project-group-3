@@ -1,17 +1,16 @@
 .header {
   position: absolute;
-
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, 0);
 
-  margin: 32px auto;
-
   width: 100%;
 }
 .header-container {
+ margin-top: 32px;
   display: flex;
   justify-content: space-between;
+  padding: 0 16px;
 }
 
 .menu-link {
@@ -53,20 +52,27 @@
 
 /* ======================================MOBILE HEADER STYLES================================== */
 /* 320===========   */
+@media screen and (width: 320px) {
+  .header {
+    width: 300px;   
+    padding: 0 10px;
+
+  }  
+}
 
 @media screen and (max-width: 375px) {
   .header {
-    width: 320px;
-  }
+    width: 320px;   
+  }  
 }
 
 /* ======================================TABLET HEADER STYLES================================== */
 @media screen and (min-width: 768px) {
   .header {
     max-width: 704px;
-
     justify-content: space-between;
   }
+
   .menu {
     display: flex;
   }
