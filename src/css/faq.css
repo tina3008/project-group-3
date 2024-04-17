@@ -331,3 +331,9 @@
     padding-left: 32px;
   }
 }
+
+@media screen and (width: 320px) {
+  .faq-container {
+    width: 300px;
+  }
+}
