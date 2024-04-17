@@ -1,30 +1,30 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-import arrowDownIcon from '../img/sprite.svg#icon-arrow-down';
-import arrowUpIcon from '../img/sprite.svg#icon-arrow-up';
+// import arrowDownIcon from '../img/sprite.svg#icon-arrow-down';
+// import arrowUpIcon from '../img/sprite.svg#icon-arrow-up';
 
 new Accordion('.faq-list-accordion-container', {
   duration: 600,
   showMultiple: true,
 });
 
-document.addEventListener('click', function (event) {
-  const clickedButton = event.target.closest('.ac-trigger');
+// document.addEventListener('click', function (event) {
+//   const clickedButton = event.target.closest('.ac-trigger');
 
-  if (!clickedButton) return;
+//   if (!clickedButton) return;
 
-  event.preventDefault();
+//   event.preventDefault();
 
-  const clickedLi = clickedButton.closest('.ac');
-  const svgUse = clickedButton.querySelector('use');
+//   const clickedLi = clickedButton.closest('.ac');
+//   const svgUse = clickedButton.querySelector('use');
 
-  if (clickedLi.classList.contains('is-active')) {
-    svgUse.setAttribute('href', arrowUpIcon);
-  } else {
-    svgUse.setAttribute('href', arrowDownIcon);
-  }
-});
+//   if (clickedLi.classList.contains('is-active')) {
+//     svgUse.setAttribute('href', arrowUpIcon);
+//   } else {
+//     svgUse.setAttribute('href', arrowDownIcon);
+//   }
+// });
 
 // document.addEventListener('click', function (event) {
 //   const clickedButton = event.target.closest('.ac-trigger');

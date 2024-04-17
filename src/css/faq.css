@@ -16,6 +16,10 @@
   display: none;
 }
 
+.ac.is-active .faq-content-div-svg {
+  transform: rotate(180deg);
+}
+
 .faq-container {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
