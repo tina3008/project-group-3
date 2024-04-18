@@ -75,12 +75,7 @@
       <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="miter"
         stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.2" d="M24 20l-8-8-8 8"></path>
     </symbol>
-    <symbol id="icon-arrow-narrow-right" viewBox="0 0 32 32">
-      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.6"
-        d="M5.334 16h21.333"></path>
-      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.6"
-        d="M18.666 8l8 8-8 8"></path>
-    </symbol>
+    
 
     <!-- faq -->
 <symbol id="icon-Vector-5-1" viewBox="0 0 0 32">
@@ -125,5 +120,19 @@
 <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.7619" d="M16 0.381c8.626 0 15.619 6.993 15.619 15.619s-6.993 15.619-15.619 15.619c-8.626 0-15.619-6.993-15.619-15.619s6.993-15.619 15.619-15.619z"></path>
 <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.5238" d="M19.81 14.095l-3.81 3.81-3.81-3.81"></path>
 </symbol>
+
+<symbol id="to-left" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M26.667 16h-21.333"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M13.333 24l-8-8 8-8"></path>
+</symbol>
+<symbol id="icon-btn-up" viewBox="0 0 32 32">
+<path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.7619" d="M16 0.381c8.626 0 15.619 6.993 15.619 15.619s-6.993 15.619-15.619 15.619c-8.626 0-15.619-6.993-15.619-15.619s6.993-15.619 15.619-15.619z"></path>
+<path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.5238" d="M19.81 17.905l-3.81-3.81-3.81 3.81"></path>
+</symbol>
+<symbol id="icon-btn-dwn" viewBox="0 0 32 32">
+<path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.7619" d="M16 0.381c8.626 0 15.619 6.993 15.619 15.619s-6.993 15.619-15.619 15.619c-8.626 0-15.619-6.993-15.619-15.619s6.993-15.619 15.619-15.619z"></path>
+<path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.5238" d="M19.81 14.095l-3.81 3.81-3.81-3.81"></path>
+</symbol>
+
 </defs>
 </svg>
