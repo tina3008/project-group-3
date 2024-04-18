@@ -1,3 +1,14 @@
+/* @font-face {
+
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+}
+body {
+  font-family: "Inter Tight", sans-serif;
+} */
 *,
 *::before,
 *::after {
@@ -12,7 +23,7 @@ body {
   flex-direction: column;
   margin: 0;
   /* scroll-behavior: smooth; */
-}
+  }
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -25,11 +36,13 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-is-open {
+.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
   display: flex;
 }
 
-
+.scrollY{
+  overflowY: hidden;
+}
