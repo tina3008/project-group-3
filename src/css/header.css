@@ -59,10 +59,10 @@
   }  
 }
 
-@media screen and (max-width: 375px) {
-  .header {
-    width: 320px;   
-  }  
+@media screen and (min-width: 375px) and (max-width: 767px){
+  .header{
+    width: 343px;
+  }
 }
 
 /* ======================================TABLET HEADER STYLES================================== */
