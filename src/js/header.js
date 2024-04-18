@@ -60,26 +60,3 @@ const menuToggleDesktop = document.getElementById('profile-link'); // Assuming t
 const menuContainerMobile = document.querySelector('.menu-container-mobile');
 const dropdownMobile = document.getElementById('dropdown-mobile');
 
-// function toggleMenuMobile() {
-//   menuContainerMobile.classList.toggle('active');
-// }
-
-// menuToggleMobile.addEventListener('click', toggleMenuMobile);
-
-// menuToggleDesktop.addEventListener('click', function(event) {
-//   event.preventDefault(); 
-
-//   const dropdownDesktop = document.getElementById('dropdown'); 
-
-//   if (menuContainerMobile.classList.contains('active')) {
-//     menuContainerMobile.classList.remove('active');
-//   } else {
-//     dropdownDesktop.classList.toggle('active');
-//     dropdownDesktop.style.opacity = dropdownDesktop.classList.contains('active') ? 1 : 0;
-//   }
-// });
-// document.addEventListener('click', function(event) {
-//   if (!menuContainerMobile.contains(event.target) && !menuToggleMobile.contains(event.target)) {
-//     menuContainerMobile.classList.remove('active');
-//   }
-// });
