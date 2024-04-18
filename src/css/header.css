@@ -7,7 +7,10 @@
   width: 100%;
 }
 .header-container {
- margin-top: 32px;
+  max-width: 343px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
   display: flex;
   justify-content: space-between;
   padding: 0 16px;
@@ -54,15 +57,14 @@
 /* 320===========   */
 @media screen and (width: 320px) {
   .header {
-    width: 300px; 
-
-  }  
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 375px) {
   .header {
-    width: 320px;   
-  }  
+    width: 320px;
+  }
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px){
@@ -75,6 +77,10 @@
   .header {
     max-width: 704px;
     justify-content: space-between;
+  }
+
+  .header-container {
+    max-width: 704px;
   }
 
   .menu {

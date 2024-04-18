@@ -1,4 +1,6 @@
 import { fetchRequests } from "./api";
+import iziToast from "izitoast";
+import "izitoast/dist/css/iziToast.min.css";
 const footerButton = document.querySelector(".footer-button");
 const closeButton = document.querySelector(".click-js");
 const modalWindow = document.querySelector("[modal-open]");
@@ -41,28 +43,22 @@ async function getRequests() {
 
 getRequests()
 
-function validation() {
-    const form = document.querySelector(".footer-form");
-    const email = document.querySelector(".footer-email");
-    const emailValue = email.value;
-    const text = document.querySelector(".validation-text");
-    const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-    if (emailValue.match(pattern)) {
-        form.classList.add("valid");
-        form.classList.remove("invalid");
-        text.innerHTML = "Success!";
-        text.style.color = "rgb(60, 188, 129)";
-    } else {
-        form.classList.remove("valid");
-        form.classList.add("invalid");
-        text.innerHTML = "Invalid email, try again";
-        text.style.color = "rgb(231, 74, 59)";
-    }
-    if (emailValue === "") {
-        form.classList.remove("valid");
-        form.classList.remove("invalid");
-        text.innerHTML = "";
-    }
-}
+document.addEventListener('DOMContentLoaded', function () {
+    const emailInput = document.getElementById('user-email');
+    const validationText = document.querySelector('.validation-text');
 
-validation()
+    emailInput.addEventListener('input', function () {
+        const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+        const emailValue = emailInput.value;
+
+        if (pattern.test(emailValue)) {
+            validationText.textContent = 'Success!';
+            validationText.style.color = 'rgb(60, 188, 129)';
+            emailInput.style.marginTop = '19px';
+        } else {
+            validationText.textContent = 'Invalid email, try again';
+            validationText.style.color = 'rgb(231, 74, 59)';
+            emailInput.style.marginTop = '19px';
+        }
+    });
+});
