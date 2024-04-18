@@ -49,17 +49,6 @@ padding: 72px  24px  24px 24px;
 }
 
 .modal-btn {
-  /* position: absolute;
-    width: 24px;
-
-        top: 24px;
-        right: 24px;     
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        background-color: #1c1d20; */
-
 
   width: 24px;
   height: 24px;
@@ -134,10 +123,7 @@ fill:#fafafa;
 }
 
 @media screen and (min-width: 1440px) {
-  .modal {
-    width: 492px;
-    height: 246px;
-  }
+ 
 
   .modal-btn {
     top: 26px;
