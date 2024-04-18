@@ -20,4 +20,4 @@ import './js/about-me-swiper';
 import './js/modal';
 import './js/send-form';
 import './js/mobail-menu';
-
+import './js/footer'
