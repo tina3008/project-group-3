@@ -13,7 +13,7 @@ burgerBtn.addEventListener('click', e => {
 mobailBtn.addEventListener('click', e => {
   e.preventDefault();
 
-  bodyHiden.classList.remove('visually-hidden');
+
   mobileWindow.classList.toggle('is-open');
 
 });
