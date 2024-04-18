@@ -1,6 +1,4 @@
 import { fetchRequests } from "./api";
-import iziToast from "izitoast";
-import "izitoast/dist/css/iziToast.min.css";
 const footerButton = document.querySelector(".footer-button");
 const closeButton = document.querySelector(".click-js");
 const modalWindow = document.querySelector("[modal-open]");
@@ -60,5 +58,9 @@ document.addEventListener('DOMContentLoaded', function () {
             validationText.style.color = 'rgb(231, 74, 59)';
             emailInput.style.marginTop = '19px';
         }
+    });
+    footerButton.addEventListener('click', function () {
+        validationText.textContent = '';
+        emailInput.style.marginTop = '';
     });
 });

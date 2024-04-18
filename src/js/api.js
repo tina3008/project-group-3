@@ -19,13 +19,22 @@ export async function fetchReviews(params) {
 export async function fetchRequests(params) {
   const END_POINT = '/requests';
   const url = `${baseURL}${END_POINT}`;
+  const requestData = {
+    email: params.email,
+    comment: params.comment,
+  };
   try {
-    const response = await axios.get(url);
+    const response = await axios.post(url, requestData, {
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+    });
     return response.data;
   } catch (error) {
     iziToast.error({
       color: 'red',
-      message: '❌ Sorry, there are mistake. Please try again!',
+      message: '❌ Sorry, there is a mistake. Please try again!',
       position: 'topRight',
     });
   }
