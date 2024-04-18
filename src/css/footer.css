@@ -78,7 +78,6 @@
 }
 
 .validation-text {
-  display: block;
   font-family: Inter Tight;
   font-size: 14px;
   font-weight: 500;
@@ -86,13 +85,17 @@
   letter-spacing: -2%;
 }
 
-/* .footer-email:valid {
+.footer-email:valid {
   border-bottom-color: rgb(60, 188, 129);
 }
 
-.footer-input:invalid {
+.footer-email:invalid {
   border-bottom-color: rgb(231, 74, 59);
-} */
+}
+
+.footer-email:placeholder-shown {
+  border-color: rgba(250, 250, 250, 0.2);
+}
 
 .footer-button {
   font-family: 'Inter Tight', sans-serif;
