@@ -55,9 +55,9 @@
 
 /* ======================================MOBILE HEADER STYLES================================== */
 /* 320===========   */
-@media screen and (width: 320px) {
+@media screen and (max-width: 320px) {
   .header {
-    width: 300px;
+    width: 288px;
   }
 }
 
