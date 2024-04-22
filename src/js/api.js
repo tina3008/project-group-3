@@ -1,6 +1,4 @@
 import axios from 'axios';
-import iziToast from "izitoast";
-import "izitoast/dist/css/iziToast.min.css";
 const baseURL = 'https://portfolio-js.b.goit.study/api';
 
 export async function fetchReviews(params) {
@@ -14,6 +12,7 @@ export async function fetchReviews(params) {
     throw error;
   }
 }
+
 
 export async function fetchRequests(params) {
   const END_POINT = '/requests';
