@@ -1,3 +1,6 @@
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+
 import { fetchRequests } from "./api";
 const footerButton = document.querySelector(".footer-button");
 const closeButton = document.querySelector(".click-js");
@@ -31,11 +34,11 @@ async function getRequests() {
             footerForm.reset();
         }
     } catch (error) {
-        iziToast.error({
-            color: 'red',
-            message: '❌ Sorry, there is an error. Please try again later!',
-            position: 'topRight',
-        });
+        // iziToast.error({
+        //     color: 'red',
+        //     message: '❌ Sorry, there is an error. Please try again later!2',
+        //     position: 'topRight',
+        // });
     }
 }
 
