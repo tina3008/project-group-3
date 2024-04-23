@@ -1,7 +1,7 @@
 .header {
   position: absolute;
   left: 50%;
-  margin-right: -50%;
+  right: -50%;
   transform: translate(-50%, 0);
 
   width: 100%;
@@ -13,7 +13,7 @@
   margin-top: 32px;
   display: flex;
   justify-content: space-between;
-  padding: 0 16px;
+ 
 }
 
 .menu-link {
@@ -55,15 +55,15 @@
 
 /* ======================================MOBILE HEADER STYLES================================== */
 /* 320===========   */
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 320px) {
   .header {
     width: 288px;
   }
-}
+} */
 
 @media screen and (max-width: 375px) {
   .header {
-    width: 320px;
+    min-width: 320px;
   }
 }
 
@@ -143,10 +143,6 @@
     opacity: 1;
   }
 
-  /* .menu:hover, .menu:focus, .menu-dropdown{
-    display: block;
-    opacity: 1;
-  } */
   .menu-dropdown a {
     display: block;
     padding: 10px;
@@ -166,9 +162,7 @@
     transform: scale(1.1);
     color: #e0373f;
   }
-  /* .menu.active .menu-dropdown {
-    display: block;
-  }  */
+
 }
 @media screen and (min-width: 1440px) {
   .header {
