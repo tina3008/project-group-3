@@ -1,7 +1,9 @@
 const clicks = document.querySelectorAll(".click-js");
 const backdrop = document.querySelector(".backdrop");
-const bodyHiden = document.querySelector('body');
 
+
+
+// close modal window===================
 clicks.forEach(click => {
     click.addEventListener("click", modalClose);
 });
@@ -17,9 +19,12 @@ function modalClose() {
   body.style.height = '';
   body.style.overflowY = '';
   window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
   
     backdrop.classList.remove("is-open");
 }
+
+
 
 function closeHandle(e) {
     if (e.code === "Escape") {

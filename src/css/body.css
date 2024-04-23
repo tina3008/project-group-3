@@ -50,3 +50,9 @@ body {
 .scrollY{
   overflowY: hidden;
 }
+
+
+.non-body-scroll{
+  height: 100hv;
+  overflowY: hidden;
+}
