@@ -1,48 +1,53 @@
-import iziToast from 'izitoast';
-import 'izitoast/dist/css/iziToast.min.css';
-
 import { fetchRequests } from "./api";
+import iziToast from "izitoast";
+import "izitoast/dist/css/iziToast.min.css";
 const footerButton = document.querySelector(".footer-button");
 const closeButton = document.querySelector(".click-js");
 const modalWindow = document.querySelector("[modal-open]");
 const footerForm = document.querySelector(".footer-form");
 
-async function getRequests() {
+async function getRequests(event) {
+    event.preventDefault();
+    const footerEmail = document.querySelector(".footer-email");
+    const footerComment = document.querySelector(".footer-comment");
+    let email = footerEmail.value;
+    let comment = footerComment.value;
     try {
-        const requests = await fetchRequests();
-        const totalItems = requests.length;
-        if (totalItems === 0) {
-            iziToast.error({
-                color: 'red',
-                message: '❌ Sorry, there is an error. Please try again later!',
-                position: 'topRight',
-            });
-        } else {
-            footerButton.addEventListener('click', toggleModal);
-            closeButton.addEventListener('click', toggleModal);
-            modalWindow.addEventListener('click', removeModal);
-            function removeModal(e) {
-                if (e.target === e.currentTarget) {
-                    modalWindow.classList.add('is-hidden');
+        const requests = await fetchRequests({ email, comment });
+        requests
+            .then((value) => {
+                footerButton.addEventListener('click', toggleModal);
+                closeButton.addEventListener('click', toggleModal);
+                modalWindow.addEventListener('click', removeModal);
+                function removeModal(e) {
+                    if (e.target === e.currentTarget) {
+                        modalWindow.classList.add('is-hidden');
+                    }
                 }
-            }
 
-            function toggleModal() {
-                modalWindow.classList.toggle('is-hidden');
-                document.body.classList.toggle('no-scroll');
-            }
-            footerForm.reset();
-        }
+                function toggleModal() {
+                    modalWindow.classList.toggle('is-hidden');
+                    document.body.classList.toggle('no-scroll');
+                }
+                footerForm.reset();
+            })
+            .catch((error) => {
+                iziToast.error({
+                    color: 'red',
+                    message: '❌ Sorry, there is an error. Please try again later!',
+                    position: 'topRight',
+                });
+            });
     } catch (error) {
-        // iziToast.error({
-        //     color: 'red',
-        //     message: '❌ Sorry, there is an error. Please try again later!2',
-        //     position: 'topRight',
-        // });
+        iziToast.error({
+            color: 'red',
+            message: '❌ Sorry, there is an error. Please try again later!',
+            position: 'topRight',
+        });
     }
 }
 
-getRequests()
+footerButton.addEventListener('submit', getRequests)
 
 document.addEventListener('DOMContentLoaded', function () {
     const emailInput = document.getElementById('user-email');
