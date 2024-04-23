@@ -14,7 +14,7 @@
   margin-bottom: 64px;
 }
 .benefit_main_head {
-  font-family: 'Inter Tight', sans-serif;
+
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
@@ -79,6 +79,7 @@ padding: 0 10px;
 }
   .benefit_card {
     display: block;
+       
   }
   .benefits{
     display: inline-flex;
