@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
- @font-face {
-
-  font-family: "Inter Tight", sans-serif;
+@font-face {
+  font-family: 'Inter Tight', sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 100 900;
   font-style: normal;
-
 }
-body {
-  font-family: "Inter Tight", sans-serif;
-} 
 
+body {
+  font-family: 'Inter Tight', sans-serif;
+}
 
 *,
 *::before,
@@ -26,8 +24,8 @@ body {
   color: #fafafa;
   flex-direction: column;
   margin: 0;
-  /* scroll-behavior: smooth; */
-  }
+  scroll-behavior: smooth;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -47,12 +45,11 @@ body {
   display: flex;
 }
 
-.scrollY{
-  overflowY: hidden;
+.scrollY {
+  overflowy: hidden;
 }
 
-
-.non-body-scroll{
+.non-body-scroll {
   height: 100hv;
-  overflowY: hidden;
+  overflowy: hidden;
 }

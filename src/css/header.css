@@ -13,7 +13,7 @@
   margin-top: 32px;
   display: flex;
   justify-content: space-between;
- 
+  padding: 0 10px;
 }
 
 .menu-link {
@@ -54,12 +54,6 @@
 }
 
 /* ======================================MOBILE HEADER STYLES================================== */
-/* 320===========   */
-/* @media screen and (max-width: 320px) {
-  .header {
-    width: 288px;
-  }
-} */
 
 @media screen and (max-width: 375px) {
   .header {
@@ -67,8 +61,8 @@
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px){
-  .header{
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .header {
     width: 343px;
   }
 }
@@ -162,7 +156,6 @@
     transform: scale(1.1);
     color: #e0373f;
   }
-
 }
 @media screen and (min-width: 1440px) {
   .header {
@@ -173,6 +166,3 @@
     max-width: 1376px;
   }
 }
-/* ======================================TABLET HEADER STYLES================================== */
-/* ======================================DESKTOP HEADER STYLES================================== */
-/* ======================================DESKTOP HEADER STYLES================================== */
