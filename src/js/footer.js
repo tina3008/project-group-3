@@ -17,7 +17,7 @@ function removeModal(e) {
 
 async function loadModal() {
     try {
-        const response = await fetch('./partials/modal.html');
+        const response = await fetch('../partials/modal.html');
         const modalHTML = await response.text();
         document.body.insertAdjacentHTML('beforeend', modalHTML);
         const closeButton = document.querySelector(".click-js");
