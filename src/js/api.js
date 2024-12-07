@@ -36,7 +36,5 @@ export async function fetchRequests(params) {
       message: '❌ Sorry, there is a mistake. Please try again!',
       position: 'topRight',
     });
-    console.error('Type of error:', error);
-    throw error;
   }
 }
