@@ -1,100 +1,97 @@
+.covers {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
-  .covers {
-    padding-top:10px;
-    padding-bottom: 10px;
-  }
+.covers-container {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(217, 217, 217, 0.04),
+      rgba(217, 217, 217, 0.04)
+    ),
+    url(../img/covers-img/fon-mob.png);
 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 375px;
+  height: 508px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
   .covers-container {
     background-image: linear-gradient(
         to bottom,
         rgba(217, 217, 217, 0.04),
         rgba(217, 217, 217, 0.04)
       ),
-      url(../img/covers-img/fon-mob.png);
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-width: 375px;
-    height: 508px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
+      url(../img/covers-img/fon-mob@2x.png);
   }
+}
 
-  @media screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px),
-    screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-    .covers-container {
-      background-image: linear-gradient(
-          to bottom,
-          rgba(217, 217, 217, 0.04),
-          rgba(217, 217, 217, 0.04)
-        ),
-        url(../img/covers-img/fon-mob@2x.png);
-    }
-  }
+/* my muvi================= */
 
-  /* my muvi================= */
+.content {
+  position: relative;
+}
+.image_set {
+  position: absolute;
+  right: -800px;
+  left: 0;
+  overflow: hidden;
+}
 
-  .content {
-    position: relative;
-  }
-  .image_set {
-    position: absolute;
-    right: -800px;
-    left: 0;
-    overflow: hidden;
-  }
-  
-  .image_line {  
-     display: flex;
-     /* justify-content: center;
+.image_line {
+  display: flex;
+  /* justify-content: center;
      align-items: center; */
-     gap: 32px;
-     margin-bottom: 32px;
-     transform: rotate(16deg);
-  }
-  
-  .image_item {
-/* width: 544px;
-    height: 314px; */
+  gap: 32px;
+  margin-bottom: 32px;
+  transform: rotate(16deg);
+}
 
-    width: 282px;
-    height: 160px;    
-    overflow: hidden; 
-    flex-shrink: 0;
-    /* margin-right: 10px;  */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* width: calc(100% / 8);  */
-    white-space: nowrap;
-    animation-name: marqueeLine;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-  }
-  
-  @keyframes marqueeLine {
-    from {
-      transform: translateX(-60%);
-    }
+.image_item {
+  width: 282px;
+  height: 160px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: calc(100% / 8);  */
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
 
-    to {
-      transform: translateX(-200%);
-    }
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-60%);
   }
-  @media screen and (max-width: 320px) {
-    width: 300px;
-    padding-left: 10px;
-    padding-right: 10px;
+
+  to {
+    transform: translateX(-200%);
   }
+}
+@media screen and (max-width: 320px) {
+ content{
+width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+ }
+}
 /* my muvi end==================*/
 
 @media screen and (min-width: 768px) {
   .covers {
-    padding: 48px 32px;   
+    padding: 48px 32px;
   }
 
   .covers-container {
@@ -104,10 +101,9 @@
         rgba(217, 217, 217, 0.04)
       ),
       url(../img/covers-img/fon-tab.png);
-  
+
     max-width: 768px;
     height: 960px;
-
   }
 
   @media screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -123,17 +119,14 @@
     }
   }
 
-
-
   .image_line {
     gap: 64px;
     margin-bottom: 64px;
- 
   }
 
   .image_item {
     width: 544px;
-        height: 314px;
+    height: 314px;
     overflow: hidden;
   }
 }
@@ -151,10 +144,9 @@
         rgba(217, 217, 217, 0.04)
       ),
       url(../img/covers-img/fon-desc.png);
- 
+
     min-width: 1440px;
     height: 960px;
-  
   }
 
   @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
@@ -168,5 +160,5 @@
         ),
         url(../img/covers-img/fon-desc@2x.png);
     }
-  } 
+  }
 }
